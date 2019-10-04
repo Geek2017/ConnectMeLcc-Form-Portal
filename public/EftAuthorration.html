@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form Portal</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css" />
+   
+</head>
+
+<body>
+    <div class="page-container">
+        <div class="page-sidebar">
+            <ul class="x-navigation">
+                <li class="xn-logo"><a href="index.html">Epic.Network</a><a href="#" class="x-navigation-control"></a>
+                </li>
+                <li class="xn-profile">
+                        <a href="#" class="profile-mini">
+                            <img src="assets/images/users/avatar.jpg" alt="John Doe"/>
+                        </a>
+                        <div class="profile">
+                            <div class="profile-image">
+                                <img src="assets/images/users/avatar.jpg" alt="John Doe"/>
+                            </div>
+                            <div class="profile-data">
+                                <div class="profile-data-name">John Doe</div>
+                                <div class="profile-data-title">Web Developer/Designer</div>
+                            </div>
+                            <div class="profile-controls">
+                                <a href="pages-profile.html" class="profile-control-left"><span class="fa fa-info"></span></a>
+                                <a href="pages-messages.html" class="profile-control-right"><span class="fa fa-envelope"></span></a>
+                            </div>
+                        </div>                                                                        
+                    </li>
+                <li class="xn-title">Navigation</li>
+                <li><a href="main.html"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a>
+                </li>
+                <li class="xn-openable"><a href="#"><span class="fa fa-files-o"></span> <span
+                            class="xn-text">Forms</span></a>
+                    <ul>
+                        <li><a href=""><span class="glyphicon glyphicon-earphone"></span>Add Number</a></li>
+                        <li><a href="SalesProposal.html"><span
+                                    class="glyphicon glyphicon-list-alt"></span>SalesProposal</a></li>
+                        <li><a href="TollFreePort.html"><span class="fa fa-dollar"></span>Toll Free Port</a></li>
+                        <li><a href=""><span class="fa fa fa-credit-card"></span>Credit Card Auth</a></li>
+                        <li><a href=""><span class="fa fa-unlock"></span>EFT Authorization</a></li>
+                        <li><a href=""><span class="fa fa-retweet"></span>LOA Port</a></li>
+                        <li><a href=""><span class="fa fa-thumb-tack"></span>Q Instrustions</a></li>
+                        <li><a href=""><span class="glyphicon glyphicon-qrcode"></span>Star Code Ref.</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="page-content">
+            <ul class="x-navigation x-navigation-horizontal x-navigation-panel">
+                <li class="xn-icon-button"><a href="#" class="x-navigation-minimize"><span
+                            class="fa fa-dedent"></span></a></li>
+                <li class="xn-search">
+                    <form role="form"><input type="text" name="search" placeholder="Search..." /></form>
+                </li>
+                <li class="xn-icon-button pull-right"><a href="/public" class="mb-control" data-box="#mb-signout"><span
+                            class="fa fa-sign-out"></span></a></li>
+                <li class="xn-icon-button pull-right"><a href="#"><span class="fa fa-comments"></span></a>
+                    <div class="informer informer-danger">4</div>
+                    <div class="panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><span class="fa fa-comments"></span> Messages</h3>
+                            <div class="pull-right"><span class="label label-danger">4 new</span></div>
+                        </div>
+                        <div class="panel-body list-group list-group-contacts scroll" style="height:200px;"><a href="#"
+                                class="list-group-item">
+                                <div class="list-group-status status-online"></div><img
+                                    src="assets/images/users/user2.jpg" class="pull-left" alt="John Doe" /><span
+                                    class="contacts-title">John Doe</span>
+                                <p>Praesent placerat tellus id augue condimentum</p>
+                            </a><a href="#" class="list-group-item">
+                                <div class="list-group-status status-away"></div><img src="assets/images/users/user.jpg"
+                                    class="pull-left" alt="Dmitry Ivaniuk" /><span class="contacts-title">Dmitry
+                                    Ivaniuk</span>
+                                <p>Donec risus sapien, sagittis et magna quis</p>
+                            </a><a href="#" class="list-group-item">
+                                <div class="list-group-status status-away"></div><img
+                                    src="assets/images/users/user3.jpg" class="pull-left" alt="Nadia Ali" /><span
+                                    class="contacts-title">Nadia Ali</span>
+                                <p>Mauris vel eros ut nunc rhoncus cursus sed</p>
+                            </a><a href="#" class="list-group-item">
+                                <div class="list-group-status status-offline"></div><img
+                                    src="assets/images/users/user6.jpg" class="pull-left" alt="Darth Vader" /><span
+                                    class="contacts-title">Darth Vader</span>
+                                <p>I want my money back!</p>
+                            </a></div>
+                        <div class="panel-footer text-center"><a href="">Show all messages</a></div>
+                    </div>
+                </li>
+                <li class="xn-icon-button pull-right"><a href="#"><span class="fa fa-tasks"></span></a>
+                    <div class="informer informer-warning">3</div>
+                    <div class="panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><span class="fa fa-tasks"></span> Tasks</h3>
+                            <div class="pull-right"><span class="label label-warning">3 active</span></div>
+                        </div>
+                        <div class="panel-body list-group scroll" style="height:200px;"><a class="list-group-item"
+                                href="#"><strong>Phasellus augue arcu, elementum</strong>
+                                <div class="progress progress-small progress-striped active">
+                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:50%;">50%</div>
+                                </div><small class="text-muted">John Doe, 25 Sep 2014 / 50%</small>
+                            </a><a class="list-group-item" href="#"><strong>Aenean ac cursus</strong>
+                                <div class="progress progress-small progress-striped active">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:80%;">80%</div>
+                                </div><small class="text-muted">Dmitry Ivaniuk, 24 Sep 2014 / 80%</small>
+                            </a><a class="list-group-item" href="#"><strong>Lorem ipsum dolor</strong>
+                                <div class="progress progress-small progress-striped active">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:95%;">95%</div>
+                                </div><small class="text-muted">John Doe, 23 Sep 2014 / 95%</small>
+                            </a><a class="list-group-item" href="#"><strong>Cras suscipit ac quam at tincidunt.</strong>
+                                <div class="progress progress-small">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                        aria-valuemax="100" style="width:100%;">100%</div>
+                                </div><small class="text-muted">John Doe, 21 Sep 2014 /</small><small
+                                    class="text-success">Done</small>
+                            </a></div>
+                        <div class="panel-footer text-center"><a href=" ">Show all tasks</a></div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Forms Stuff</a></li>
+                <li><a href="#">Form Layout</a></li>
+                <li class="active">Two Column</li>
+            </ul>
+            <div class="page-content-wrap">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form class="form-horizontal">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"><strong>epic</strong>.network</h3>
+                                    <ul class="panel-controls">
+                                        <li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-12 scCol ui-sortable"></div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-4" style="padding-left:2%">
+                                            <div class="widget widget-info widget-no-subtitle">
+                                                <div class="widget-subtitle">
+                                                    <h1 style="color:white;"><strong>
+                                                            <p"> Voip Billing</p>
+                                                                <p> Services</p>
+                                                        </strong></h1>
+                                                </div>
+                                            </div>
+                                            <center>
+                                                <h3>BILLED ON BEHALF OF</h3>
+                                            </center>
+                                        </div>
+                                        <div class="col-md-8 pull-right">
+                                            <div class="panel panel-warning">
+                                                <div class="panel-heading ui-draggable-handle">
+                                                    <h3 class="panel-title"></h3>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <h1>
+                                                        <p>VOIP BILLING SERVICESCREDIT CARD AUTHORIZATION FORM</p>
+                                                    </h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 pull" style="padding-left:2%">
+                                            <center>
+                                                <div class="widget-subtitle ">
+                                                    <h1 style="color:white;"><strong><img src="./img/HAM.JPG"
+                                                                height="90px"></p></strong></h1>
+                                                </div>
+                                            </center>
+                                        </div>
+                                        <div class="col-md-8 pull-right">
+                                            <div class="panel-body text-left">
+                                                <p>Hamlett Computer Services</p>
+                                                <p> 25528 S. Hyde Park Blvd #302, Chicago, IL 60637</p>
+                                                <p> (708) 608-0427 / jhamlett@hamletttechnologies.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="panel panel-warning">
+                                            <div class="panel-body text-center">
+                                                <p>
+                                                    <h2> <strong>Please submit digitally or fax completed and signed form to 732-972-5164.</h2>
+                                                    </strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                          
+                                
+                            
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group text-left form-group-separated" style="padding-left: 160px;">
+                                                <h4>
+                                                    <p>I <input  type="text">  hereby authorize VoIP Billing Services to charge my bank account
+                                                        via EFT (Electronic Funds Transfer) for recurring monthly service fees.
+                                                        <br><br>
+                                                        Authorization for: <strong>  ongoing until written cancellation is received per Hamlett Computer Services.</strong>
+                                                    </p>
+                                                </h4>
+                                               
+                                                        
+                                                <label class="col-md-2  control-label">Company Name:</label>
+                                                        <div class="col-md-10 ">                                            
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
+                                                                <input type="text" class="form-control">
+                                                            </div>                                            
+                                                            
+                                                        </div>
+                                                        <br><br>
+                                                        <label class="col-md-2  control-label">Account Phone Number:</label>
+                                                        <div class="col-md-10 ">                                            
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
+                                                                <input type="text" class="form-control">
+                                                            </div>                                            
+                                                            
+                                                        </div>
+                                                        <br><br>
+                                                        <label class="col-md-2  control-label">Bank Name::</label>
+                                                        <div class="col-md-10 ">                                            
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
+                                                                <input type="text" class="form-control">
+                                                            </div>                                            
+                                                            
+                                                        </div>
+                                                        
+                                                     
+                                                        <br><br>
+                                                        <label class="col-md-2  control-label">Bank Routing Number:</label>
+                                                        <div class="col-md-10 ">                                            
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
+                                                                <input type="text" class="form-control">
+                                                            </div>                                            
+                                                            
+                                                        </div>
+                                                        <br><br>
+                                                     
+                                                      
+                                                        <label class="col-md-2  control-label">Bank Account Number:</label>
+                                                        <div class="col-md-10 ">                                            
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
+                                                                <input type="text" class="form-control">
+                                                            </div>                                            
+                                                            
+                                                        </div>
+                                                        <br><br>
+                                                    
+                                                       
+                                                        <br><br>
+                                                        <p><h4>I authorize VoIP Billing Services to charge my credit card for the recurring monthly fee plus taxes and
+                                                                telecommunication fees. These charges will occur on a monthly basis until this account is canceled per
+                                                                Hamlett Computer Services. </h4></p>
+                                                                <div class="row">
+                                                                        <div class="col-md-6">
+                                                                                <label class="col-md-4  control-label">Cardholder’s Signature:</label>
+                                                                                <div class="col-md-6 ">                                            
+                                                                                    <div class="input-group">
+                                                                                        <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
+                                                                                        <input type="text " class="form-control">
+                                                                                        
+                                                                                    </div>                                            
+                                                                                    
+                                                                                </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                                <label class="col-md-4  control-label">Date:</label>
+                                                                                <div class="col-md-6 ">                                            
+                                                                                    <div class="input-group">
+                                                                                        <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
+                                                                                        <input type="text" class="form-control datepicker" value="10-4-19">
+                                                                                        
+                                                                                    </div>                                            
+                                                                                    
+                                                                                </div>
+                                                                        </div>
+                                                                        -
+                                                                        <div class="col-md-12">
+                                                                            <label class="col-md-4  control-label">Email:</label>
+                                                                            <div class="col-md-6 ">                                            
+                                                                                <div class="input-group">
+                                                                                    <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
+                                                                                    <input type="email" class="form-control ">
+                                                                                    
+                                                                                </div>                                            
+                                                                                
+                                                                            </div>
+                                                                    </div>
+                                                                        
+                                                                        <br><br><br><br>
+                                                                        <p><h4>As the credit card holder, I also authorize VoIP Billing Services to charge my credit card for future purchases or
+                                                                                equipment orders verbally approved by me. VoIP Billing Services will keep all information entered on this form
+                                                                                strictly confidential. Please note that VoIP Billing Services is an outside provider that bills on behalf of
+                                                                                Hamlett Computer Services.</h4></p>
+                                                                    </div>
+                                                                   
+                                                                    <div class="col-md-12 ">                                                                                                                                     
+                                                                       <h1>Please attach copy of voided check here: <input type="file" class="fileinput btn-primary " name="filename" id="filename" title="Browse file"></h1> 
+                                                                        
+                                                                    </div>
+                                            </div>
+                                          
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-md-4" style="padding-left:2%">
+                                                <div class="widget widget-info widget-no-subtitle">
+                                                    <div class="widget-subtitle">
+                                                        <h1 style="color:white;"><strong>
+                                                                <p"> Voip Billing</p>
+                                                                    <p> Services</p>
+                                                            </strong></h1>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="col-md-8 pull-right">
+                                                <div class="panel panel-warning">
+                                                    <div class="panel-heading ui-draggable-handle">
+                                                        <h3 class="panel-title"></h3>
+                                                    </div>
+                                                    <div class="panel-body">
+                                                        <h1>
+                                                            <p>VOIP BILLING SERVICESCREDIT CARD AUTHORIZATION FORM</p>
+                                                        </h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 ">
+                                                    <div class="panel panel-warning">
+                                                        <div class="panel-heading ui-draggable-handle">
+                                                            <h3 class="panel-title"></h3>
+                                                        </div>
+                                                        <div class="panel-body">
+                                                            <h1>
+                                                                <p>About VoIP Billing Services</p>
+                                                            </h1>
+                                                        </div>
+                                                    </div>
+                                                    <p><h4>VoIP Billing Services is designed and built for Managed Service
+                                                            Providers to perform billing for telecommunications. VoIP Billing
+                                                            Services, serves as a billing platform and handles telecommunication
+                                                            taxes and fees to assure FCC compliance.
+                                                            Once your account is actively running traffic and set to Active Status,
+                                                            your account is deemed active to bill. After your account is placed in
+                                                            Active Status, your initial invoice will generate and be charged. Each
+                                                            month you will be charged on your Bill Date for your monthly service.
+                                                            I understand VoIP Billing Services will apply fee of $20.00 to my
+                                                            account if I Chargeback my monthly payment or if I reverse payment
+                                                            without VoIP Billing Service’s permission of any of the charges
+                                                            authorized on this form and I agree to pay this fee if this occurs.</h4></p>
+                                                            <div class="col-md-6" >
+                                                                    <div class="widget widget-info widget-no-subtitle">
+                                                                        <div class="widget-subtitle">
+                                                                            <img class="img-responsive" src="./img/ccaf1.jpg" >
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                            </div>
+                                                            <div class="col-md-6" >
+                                                                    <div class="widget widget-info widget-no-subtitle">
+                                                                        <div class="widget-subtitle">
+                                                                            <img class="img-responsive" src="./img/ccaf2.jpg" >
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                            </div>
+                                                            <div class="panel panel-warning">
+                                                                    <div class="panel-heading ui-draggable-handle">
+                                                                        <h3 class="panel-title"></h3>
+                                                                    </div>
+                                                                    <div class="panel-body">
+                                                                        <h1>
+                                                                            <p>Contact Us</p>
+                                                                        </h1>
+                                                                    </div>
+                                                            </div>  
+                                                            <h4 style="padding-left: 20px"><p >VoIP Billing Services</p> 
+                                                            <p >     345 Highway 9 South Suite 342</p> 
+                                                            <p >    Manalapan, NJ 07726</p> 
+                                                            <p >     (800) 362-7929</p> </h4> 
+                                                            <div class="panel panel-warning">
+                                                                    <div class="panel-heading ui-draggable-handle">
+                                                                        <h3 class="panel-title"></h3>
+                                                                    </div>
+                                                                    
+                                                                </div>    
+                                            </div>
+                                        </div>
+                                <div class="panel-footer"><button class="btn btn-default">Clear Form</button><button
+                                        class="btn btn-primary pull-right">Submit</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="message-box animated fadeIn" data-sound="alert" id="mb-signout">
+        <div class="mb-container">
+            <div class="mb-middle">
+                <div class="mb-title"><span class="fa fa-sign-out"></span> Log <strong>Out</strong> ?</div>
+                <div class="mb-content">
+                    <p>Are you sure you want to log out?</p>
+                    <p>Press No if youwant to continue work. Press Yes to logout current user.</p>
+                </div>
+                <div class="mb-footer">
+                    <div class="pull-right"><a href="index.html" class="btn btn-success btn-lg">Yes</a><button
+                            class="btn btn-default btn-lg mb-control-close">No</button></div>
+                </div>
+            </div>
+        </div>
+    </div><audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio><audio id="audio-fail"
+        src="audio/fail.mp3" preload="auto"></audio>
+    <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>
+    <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>
+    <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
+    <script type="text/javascript" src="js/plugins/bootstrap/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="js/plugins/bootstrap/bootstrap-file-input.js"></script>
+    <script type="text/javascript" src="js/plugins/bootstrap/bootstrap-select.js"></script>
+    <script type="text/javascript" src="js/plugins/tagsinput/jquery.tagsinput.min.js"></script>
+    <script type="text/javascript" src="js/settings.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/actions.js"></script>
+</body>
+
+</html>
