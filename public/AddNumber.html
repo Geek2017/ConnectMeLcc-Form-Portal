@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META SECTION -->
+    <title>Form Portal</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- END META SECTION -->
+
+    <!-- CSS INCLUDE -->
+    <link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css" />
+    <!-- EOF CSS INCLUDE -->
+</head>
+
+<body>
+    <!-- START PAGE CONTAINER -->
+    <div class="page-container">
+
+        <!-- START PAGE SIDEBAR -->
+        <div class="page-sidebar">
+            <!-- START X-NAVIGATION -->
+            <ul class="x-navigation">
+                <li class="xn-logo">
+                    <a href="index.html">Epic.Network</a>
+                    <a href="#" class="x-navigation-control"></a>
+                </li>
+                <li class="xn-profile">
+                    <a href="#" class="profile-mini">
+                        <img src="assets/images/users/avatar.jpg" alt="John Doe" />
+                    </a>
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="assets/images/users/avatar.jpg" alt="John Doe" />
+                        </div>
+                        <div class="profile-data">
+                            <div class="profile-data-name">John Doe</div>
+                            <div class="profile-data-title">Web Developer/Designer</div>
+                        </div>
+                        <div class="profile-controls">
+                            <a href="pages-profile.html" class="profile-control-left"><span
+                                    class="fa fa-info"></span></a>
+                            <a href="      " class="profile-control-right"><span class="fa fa-envelope"></span></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="xn-title">Navigation</li>
+                <li>
+                    <a href="main.html"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a>
+                </li>
+                <li class="xn-openable">
+                    <a href="#"><span class="fa fa-files-o"></span> <span class="xn-text">Forms</span></a>
+                    <ul>
+                        <li><a href="AddNumber.html"><span class="glyphicon glyphicon-earphone"></span>Add Number</a></li>
+                        <li><a href="SalesProposal.html"><span class="glyphicon glyphicon-list-alt"></span>Sales
+                                Proposal</a></li>
+                        <li><a href="TollFreePort.html"><span class="fa fa-dollar"></span>Toll Free Port</a></li>
+                        <li><a href="CreditCardForm.html"><span class="fa fa fa-credit-card"></span>Credit Card Auth</a></li>
+                        <li><a href="EftAuthorration.html"><span class="fa fa-unlock"></span>EFT Authorization</a></li>
+                        <li><a href="LoaPort.html"><span class="fa fa-retweet"></span>LOA Port</a></li>
+                        <li><a href="QuickInstruction.html"><span class="fa fa-thumb-tack"></span>Q Instrustions</a></li>
+                        <li><a href="StarCode.html"><span class="glyphicon glyphicon-qrcode"></span>Star Code Ref.</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- END X-NAVIGATION -->
+        </div>
+        <!-- END PAGE SIDEBAR -->
+
+        <!-- PAGE CONTENT -->
+        <div class="page-content">
+
+            <!-- START X-NAVIGATION VERTICAL -->
+            <ul class="x-navigation x-navigation-horizontal x-navigation-panel">
+                <!-- TOGGLE NAVIGATION -->
+                <li class="xn-icon-button">
+                    <a href="#" class="x-navigation-minimize"><span class="fa fa-dedent"></span></a>
+                </li>
+                <!-- END TOGGLE NAVIGATION -->
+                <!-- SEARCH -->
+                <li class="xn-search">
+                    <form role="form">
+                        <input type="text" name="search" placeholder="Search..." />
+                    </form>
+                </li>
+                <!-- END SEARCH -->
+                <!-- SIGN OUT -->
+                <li class="xn-icon-button pull-right">
+                    <a href="/public" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span></a>
+                </li>
+                <!-- END SIGN OUT -->
+                <!-- MESSAGES -->
+                <li class="xn-icon-button pull-right">
+                    <a href="#"><span class="fa fa-comments"></span></a>
+                    <div class="informer informer-danger">4</div>
+                    <div class="panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><span class="fa fa-comments"></span> Messages</h3>
+                            <div class="pull-right">
+                                <span class="label label-danger">4 new</span>
+                            </div>
+                        </div>
+                        <div class="panel-body list-group list-group-contacts scroll" style="height: 200px;">
+                            <a href="#" class="list-group-item">
+                                <div class="list-group-status status-online"></div>
+                                <img src="assets/images/users/user2.jpg" class="pull-left" alt="John Doe" />
+                                <span class="contacts-title">John Doe</span>
+                                <p>Praesent placerat tellus id augue condimentum</p>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <div class="list-group-status status-away"></div>
+                                <img src="assets/images/users/user.jpg" class="pull-left" alt="Dmitry Ivaniuk" />
+                                <span class="contacts-title">Dmitry Ivaniuk</span>
+                                <p>Donec risus sapien, sagittis et magna quis</p>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <div class="list-group-status status-away"></div>
+                                <img src="assets/images/users/user3.jpg" class="pull-left" alt="Nadia Ali" />
+                                <span class="contacts-title">Nadia Ali</span>
+                                <p>Mauris vel eros ut nunc rhoncus cursus sed</p>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <div class="list-group-status status-offline"></div>
+                                <img src="assets/images/users/user6.jpg" class="pull-left" alt="Darth Vader" />
+                                <span class="contacts-title">Darth Vader</span>
+                                <p>I want my money back!</p>
+                            </a>
+                        </div>
+                        <div class="panel-footer text-center">
+                            <a href="      ">Show all messages</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- END MESSAGES -->
+                <!-- TASKS -->
+                <li class="xn-icon-button pull-right">
+                    <a href="#"><span class="fa fa-tasks"></span></a>
+                    <div class="informer informer-warning">3</div>
+                    <div class="panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><span class="fa fa-tasks"></span> Tasks</h3>
+                            <div class="pull-right">
+                                <span class="label label-warning">3 active</span>
+                            </div>
+                        </div>
+                        <div class="panel-body list-group scroll" style="height: 200px;">
+                            <a class="list-group-item" href="#">
+                                <strong>Phasellus augue arcu, elementum</strong>
+                                <div class="progress progress-small progress-striped active">
+                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50"
+                                        aria-valuemin="0" aria-valuemax="100" style="width: 50%;">50%</div>
+                                </div>
+                                <small class="text-muted">John Doe, 25 Sep 2014 / 50%</small>
+                            </a>
+                            <a class="list-group-item" href="#">
+                                <strong>Aenean ac cursus</strong>
+                                <div class="progress progress-small progress-striped active">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80"
+                                        aria-valuemin="0" aria-valuemax="100" style="width: 80%;">80%</div>
+                                </div>
+                                <small class="text-muted">Dmitry Ivaniuk, 24 Sep 2014 / 80%</small>
+                            </a>
+                            <a class="list-group-item" href="#">
+                                <strong>Lorem ipsum dolor</strong>
+                                <div class="progress progress-small progress-striped active">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95"
+                                        aria-valuemin="0" aria-valuemax="100" style="width: 95%;">95%</div>
+                                </div>
+                                <small class="text-muted">John Doe, 23 Sep 2014 / 95%</small>
+                            </a>
+                            <a class="list-group-item" href="#">
+                                <strong>Cras suscipit ac quam at tincidunt.</strong>
+                                <div class="progress progress-small">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 100%;">100%</div>
+                                </div>
+                                <small class="text-muted">John Doe, 21 Sep 2014 /</small><small class="text-success">
+                                    Done</small>
+                            </a>
+                        </div>
+                        <div class="panel-footer text-center">
+                            <a href="                       ">Show all tasks</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- END TASKS -->
+            </ul>
+            <!-- END X-NAVIGATION VERTICAL -->
+
+            <!-- START BREADCRUMB -->
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Forms Stuff</a></li>
+                <li><a href="#">Form Layout</a></li>
+                <li class="active">Two Column</li>
+            </ul>
+            <!-- END BREADCRUMB -->
+
+            <!-- PAGE CONTENT WRAPPER -->
+            <div class="page-content-wrap">
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <form class="form-horizontal">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"><strong>epic</strong>.network</h3>
+                                    <ul class="panel-controls">
+                                        <li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-12 scCol ui-sortable">
+
+                                    <div class="panel panel-success" id="grid_block_5">
+                                        <div class="panel-heading ui-draggable-handle ui-sortable-handle">
+                                            <h3 class="panel-title"></h3>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="panel-body">
+
+                                    <h1>Transfer My Existing Number</h1>
+                                    <p>To transfer your existing telephone number you must ll out the Letter of
+                                        Authorization form below completely. Once this form has been
+                                        submitted we will begin the transfer process with your current phone company.
+                                        The status of your transfer can be found in your control panel on the
+                                        Numbers page. The transfer process can take UP TO 60 DAYS to be completed. You
+                                        will be issued a temporary number until your transferred
+                                        number has been activated.
+                                    </p>
+                                </div>
+
+                                <div class="col-md-12 ">
+                                    <h3>Step 1: Why should I transfer my number to Phone.com?</h3>
+                                    <div class="panel panel-success">
+
+                                        <div class="panel-body ">
+                                            <p>
+                                                We know you have probably had your same number for awhile. Why switch
+                                                numbers, thus leaving you the time-consuming job of contacting
+                                                friends, family, customers, business partners, etc. with the new number.
+                                                Keep it easy by transferring your existing number to Phone.com!
+                                                With so many features available, the choice is simple:
+                                                Customer claiming they left a message and their call was never returned?
+                                                Check your past saved voicemails through the ease of email to see
+                                                if they're right!
+                                                Give your home-based business a professional sound; no one will know you
+                                                are answering calls from your living room!
+                                                New baby in the house? Set up a schedule to forward all calls after 8pm
+                                                straight to voicemail to avoid waking up the little one!
+                                                And so much more!
+                                                Still have questions? Review some frequently asked questions then come
+                                                back to transfer your number
+                                                FCC.gov: FCC Consumer Facts
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-12 ">
+                                    <h3>Step 2: Can my existing number be transferred?
+                                    </h3>
+                                    <div class="panel panel-success">
+
+                                        <div class="panel-body ">
+                                            <h5><strong> Phone Number to Transfer</strong></h5>
+                                            <p>Enter the phone number you wish to transfer and click "Check Now".</p>
+                                            <p>
+                                                <input type="text"> <input type="text"> <input type="text"> <button
+                                                    type="button" class="btn btn-rounded btn-xs btn-success">Check
+                                                    Now</button>
+                                                <p><label>
+                                                        <input type="checkbox" value="">
+
+                                                    </label> This number has remote call forwarding (RCFW)</p>
+                                            </p>
+                                            <p>
+                                                <h6>Please note, the "Check Now" search only veries that your rate
+                                                    center is supported by Phone.com. Any account freeze or contractual
+                                                    obligation with
+                                                    your provider cannot be determined with this search. Please contact
+                                                    your current provider to learn if your number is fully portable to
+                                                    another
+                                                    company.</h6>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-12 ">
+                                    <h3>Step 3: Letter of Authorization
+                                    </h3>
+                                    <p>I authorize Phone.com to act on my behalf to transfer the above telephone number
+                                        to Phone.com. I understand that I can have only one
+                                        telecommunications provider for any one telephone number, and that by
+                                        transferring the number to Phone.com, my existing service on that phone
+                                        number will be aected. This authorization shall remain in eect until I provide
+                                        further written notice.</p>
+                                    <div class="panel panel-success">
+
+                                        <div class="panel-body ">
+                                            <h5><strong>Billing Name</strong></h5>
+
+                                            <div class="form-group has-warning">
+                                                <label class="control-label">Customer's Business or Personal
+                                                    Name:</label>
+                                                <input type="text" class="form-control">(Exactly as it appears on your
+                                                bill.)
+                                            </div>
+
+                                        </div>
+                                        <div class="btn-group bootstrap-select show-tick form-control select"><button
+                                                type="button" class="btn dropdown-toggle selectpicker btn-default"
+                                                data-toggle="dropdown" title="Nothing selected"
+                                                aria-expanded="false"><span class="filter-option pull-left">Select
+                                                    No.</span>&nbsp;<span class="caret"></span></button>
+                                            <div class="dropdown-menu open"
+                                                style="max-height: 650px; overflow: hidden; min-height: 121px;">
+                                                <ul class="dropdown-menu inner selectpicker" role="menu"
+                                                    style="max-height: 648px; overflow-y: auto; min-height: 119px;">
+                                                    <li rel="0"><a tabindex="0" class="" style=""><span
+                                                                class="text">Option 1</span><i
+                                                                class="glyphicon glyphicon-ok icon-ok check-mark"></i></a>
+                                                    </li>
+                                                    <li rel="1"><a tabindex="0" class="" style=""><span
+                                                                class="text">Option 2</span><i
+                                                                class="glyphicon glyphicon-ok icon-ok check-mark"></i></a>
+                                                    </li>
+                                                    <li rel="2"><a tabindex="0" class="" style=""><span
+                                                                class="text">Option 3</span><i
+                                                                class="glyphicon glyphicon-ok icon-ok check-mark"></i></a>
+                                                    </li>
+                                                    <li rel="3"><a tabindex="0" class="" style=""><span
+                                                                class="text">Option 4</span><i
+                                                                class="glyphicon glyphicon-ok icon-ok check-mark"></i></a>
+                                                    </li>
+                                                    <li rel="4"><a tabindex="0" class="" style=""><span
+                                                                class="text">Option 5</span><i
+                                                                class="glyphicon glyphicon-ok icon-ok check-mark"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-success">
+
+                                        <div class="panel-body ">
+                                            <h5><strong>Service Address</strong></h5>
+
+
+
+                                        </div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon">Address</span>
+                                            <input type="text" class="form-control" placeholder="">
+                                        </div><br>
+                                        <div class="input-group">
+                                            <span class="input-group-addon">Address 2</span>
+                                            <input type="text" class="form-control" placeholder="">
+                                        </div><br>
+                                        <div class="input-group">
+                                            <span class="input-group-addon">City</span>
+                                            <input type="text" class="form-control" placeholder="">
+                                        </div><br>
+                                        <div class="input-group">
+                                            <span class="input-group-addon">State</span>
+                                            <div class="btn-group bootstrap-select show-tick form-control select">
+                                                <button type="button"
+                                                    class="btn dropdown-toggle selectpicker btn-default"
+                                                    data-toggle="dropdown" title="Nothing selected"
+                                                    aria-expanded="false"><span class="filter-option pull-left">Select
+                                                        No.</span>&nbsp;<span class="caret"></span></button>
+                                                <div class="dropdown-menu open"
+                                                    style="max-height: 650px; overflow: hidden; min-height: 121px;">
+                                                    <ul class="dropdown-menu inner selectpicker" role="menu"
+                                                        style="max-height: 648px; overflow-y: auto; min-height: 119px;">
+                                                        <li rel="0"><a tabindex="0" class="" style=""><span
+                                                                    class="text">Option 1</span><i
+                                                                    class="glyphicon glyphicon-ok icon-ok check-mark"></i></a>
+                                                        </li>
+                                                        <li rel="1"><a tabindex="0" class="" style=""><span
+                                                                    class="text">Option 2</span><i
+                                                                    class="glyphicon glyphicon-ok icon-ok check-mark"></i></a>
+                                                        </li>
+                                                        <li rel="2"><a tabindex="0" class="" style=""><span
+                                                                    class="text">Option 3</span><i
+                                                                    class="glyphicon glyphicon-ok icon-ok check-mark"></i></a>
+                                                        </li>
+                                                        <li rel="3"><a tabindex="0" class="" style=""><span
+                                                                    class="text">Option 4</span><i
+                                                                    class="glyphicon glyphicon-ok icon-ok check-mark"></i></a>
+                                                        </li>
+                                                        <li rel="4"><a tabindex="0" class="" style=""><span
+                                                                    class="text">Option 5</span><i
+                                                                    class="glyphicon glyphicon-ok icon-ok check-mark"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div><br>
+                                        <div class="input-group">
+                                            <span class="input-group-addon">Zip</span>
+                                            <input type="text" class="form-control" placeholder="">
+                                        </div>
+                                        <P>Please Note: The service address is where the service for the number to
+                                            transfer is currently being
+                                            used. This may be dierent than your billing address.
+                                        </P>
+                                    </div>
+                                    <div class="panel panel-success">
+
+                                        <div class="panel-body ">
+                                            <h5><strong>Authorization Information </strong></h5>
+
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Your Name:
+                                                </span>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div><br>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Your Name:
+                                                </span>
+                                                (<input type="text" placeholder="">) <input type="text"
+                                                    placeholder="">-<input type="text" placeholder="">
+                                            </div>
+                                            <br>
+                                            <div class="radio">
+                                                I am transfering a:
+                                                <label>
+                                                    <input type="radio" name="optionsRadios" id="optionsRadios1"
+                                                        value="option1" checked="">
+                                                    Residential number
+                                                </label>
+                                                <label>
+                                                    <input type="radio" name="optionsRadios" id="optionsRadios1"
+                                                        value="option1" checked="">
+                                                    Business number
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    By checking the box shown, and submitting this form, I grant
+                                                    electronic authorization for Phone.com to act as my agent to
+                                                    complete this change,
+                                                    and I direct my current telecommunications provider to work with
+                                                    Phone.com to eect this change. I specically grant Phone.com
+                                                    authority to sign
+                                                    the Letter Of Authorization (LOA) on my behalf.
+                                                    I assert that the information I have provided on this form is true
+                                                    and accurate to the best of my knowledge. I acknowledge that any
+                                                    attempt to port
+                                                    numbers for which I am not authorized constitutes criminal identity
+                                                    theft and is punishable by law.
+                                                    I understand that the transfer process may take UP TO 60 DAYS, and I
+                                                    agree to keep my account in good standing with my current
+                                                    telecommunications provider, during this transfer period. I
+                                                    understand that I will receive a temporary number from Phone.com
+                                                    during the transfer
+                                                    period, and I agree to pay all standard monthly, usage, and recovery
+                                                    fees, even though my phone number has not yet been transferred.
+                                                    I understand that my current telecommunications provider may or may
+                                                    not cancel my existing wireless or wireline service on which this
+                                                    phone
+                                                    number is associated, depending on their policies.
+                                                    Once I have veried that the transfer is complete, and my number is
+                                                    routing to Phone.com, I agree to contact my current
+                                                    telecommunications
+                                                    provider to conrm their cancellation of my service. I understand
+                                                    that I am responsible for any cancellation, termination, or transfer
+                                                    fees that my
+                                                    current telecommunications provider may charge me.
+                                                    I understand that if I wish to return this telephone number to my
+                                                    current telecommunications provider, I may be required to pay a
+                                                    reconnection
+                                                    charge to that company.
+                                                    I also understand that Phone.com may have dierent rates and charges
+                                                    than my current telephone company, and I am willing to be billed
+                                                    accordingly
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="panel-footer">
+                                    <button class="btn btn-default">Clear Form</button>
+                                    <button class="btn btn-primary pull-right">Submit</button>
+                                </div>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- END PAGE CONTENT WRAPPER -->
+        </div>
+        <!-- END PAGE CONTENT -->
+    </div>
+    <!-- END PAGE CONTAINER -->
+
+    <!-- MESSAGE BOX-->
+    <div class="message-box animated fadeIn" data-sound="alert" id="mb-signout">
+        <div class="mb-container">
+            <div class="mb-middle">
+                <div class="mb-title"><span class="fa fa-sign-out"></span> Log <strong>Out</strong> ?</div>
+                <div class="mb-content">
+                    <p>Are you sure you want to log out?</p>
+                    <p>Press No if youwant to continue work. Press Yes to logout current user.</p>
+                </div>
+                <div class="mb-footer">
+                    <div class="pull-right">
+                        <a href="index.html" class="btn btn-success btn-lg">Yes</a>
+                        <button class="btn btn-default btn-lg mb-control-close">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MESSAGE BOX-->
+
+    <!-- START PRELOADS -->
+    <audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
+    <audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
+    <!-- END PRELOADS -->
+
+    <!-- START SCRIPTS -->
+    <!-- START PLUGINS -->
+    <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- END PLUGINS -->
+
+    <!-- THIS PAGE PLUGINS -->
+    <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>
+    <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
+
+    <script type="text/javascript" src="js/plugins/bootstrap/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="js/plugins/bootstrap/bootstrap-file-input.js"></script>
+    <script type="text/javascript" src="js/plugins/bootstrap/bootstrap-select.js"></script>
+    <script type="text/javascript" src="js/plugins/tagsinput/jquery.tagsinput.min.js"></script>
+    <!-- END THIS PAGE PLUGINS -->
+
+    <!-- START TEMPLATE -->
+    <script type="text/javascript" src="js/settings.js"></script>
+
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/actions.js"></script>
+    <!-- END TEMPLATE -->
+    <!-- END SCRIPTS -->
+</body>
+
+</html>
