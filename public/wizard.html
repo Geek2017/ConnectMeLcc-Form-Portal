@@ -19,60 +19,175 @@
 <body>
 
     <div class="login-container">
-        
+
         <div class="login-box animated fadeInDown" style="width:800px!important">
-            <div class="login-logo"></div>
+            <div class="text-center">
+                <h1>
+                    <font color="white">Form Portal</font>
+                </h1>
+            </div>
             <div class="login-body">
-                <div class="login-title"><strong>Welcome</strong>, Please login</div>
+                <div class="login-title"><strong>Welcome</strong>, Please Set Up your workspace</div>
                 <div class="block">
-                    <h4>Default Wizard</h4>
-                    <div class="wizard">
 
-                        <ul>
-                            <li>
-                                <a href="#step-1">
-                                    <span class="stepNumber">1</span>
-                                    <span class="stepDesc">Step 1<br /><small>Step 1 description</small></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#step-2">
-                                    <span class="stepNumber">2</span>
-                                    <span class="stepDesc">Step 2<br /><small>Step 2 description</small></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#step-3">
-                                    <span class="stepNumber">3</span>
-                                    <span class="stepDesc">Step 3<br /><small>Step 3 description</small></span>                   
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#step-4">
-                                    <span class="stepNumber">4</span>
-                                    <span class="stepDesc">Step 4<br /><small>Step 4 description</small></span>                   
-                                </a>
-                            </li>
-                        </ul>
-                        <div id="step-1">   
-                            <h4>Step 1 Content</h4>
-                            <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-                        </div>
-                        <div id="step-2">
-                            <h4>Step 2 Content</h4>
-                            <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-                        </div>                      
-                        <div id="step-3">
-                            <h4>Step 3 Content</h4>
-                            <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-                        </div>
-                        <div id="step-4">
-                            <h4>Step 4 Content</h4>
-                            <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-                        </div>                           
+                    <form action="index.html" role="form" class="form-horizontal">
+                        <div class="wizard show-submit" >
+                            <ul>
+                                <li>
+                                    <a href="#step-5">
+                                        <span class="stepNumber">1</span>
+                                        <span class="stepDesc"><br /><small>
+                                                <h4>
+                                                    <font color="white">Company Info</font>
+                                                </h4>
+                                            </small></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#step-6">
+                                        <span class="stepNumber">2</span>
+                                        <span class="stepDesc"><br /><small>
+                                                <h4>
+                                                    <font color="white">Theme Settings</font>
+                                                </h4>
+                                            </small></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div id="step-5">
+                                <font color="white">
 
-                    </div>
-                </div>     
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label"> Logo:</label>
+                                        <div class="col-md-10">
+                                            <input type="file" class="form-control" placeholder="Your name" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label"> Name:</label>
+                                        <div class="col-md-10">
+                                            <input type="text" class="form-control" placeholder="Your name" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label"> Address:</label>
+                                        <div class="col-md-10">
+                                            <textarea class="form-control" rows="5"
+                                                placeholder="Something about you"></textarea>
+                                        </div>
+                                    </div>
+                                </font>
+                            </div>
+                            <div id="step-6">
+                                <div class="col-md-12">
+                                    <div class="row">
+
+                                        <font color="white">
+                                            <div class="form-group theme-set">
+
+                                               
+                                                    <div class="ts-body theme-set">
+                                                        <div class="ts-title">Themes</div>
+                                                        <div class="ts-themes"><a href="#" class="active"
+                                                                data-theme="css/theme-default.css"><img
+                                                                    src="img/themes/default.jpg"></a><a href="#"
+                                                                data-theme="css/theme-brown.css"><img
+                                                                    src="img/themes/brown.jpg"></a><a href="#"
+                                                                data-theme="css/theme-blue.css"><img
+                                                                    src="img/themes/blue.jpg"></a><a href="#"
+                                                                data-theme="css/theme-white.css"><img
+                                                                    src="img/themes/light.jpg"></a><a href="#"
+                                                                data-theme="css/theme-black.css"><img
+                                                                    src="img/themes/green.jpg"></a></div>
+                                                        <div class="ts-title">Layout</div>
+                                                        <div class="ts-row"><label class="check">
+                                                                <div class="iradio_minimal-grey checked"
+                                                                    style="position: relative;"><input type="radio"
+                                                                        class="iradio" name="st_layout_boxed" value="1"
+                                                                        checked=""
+                                                                        style="position: absolute; opacity: 0;"><ins
+                                                                        class="iCheck-helper"
+                                                                        style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                                                                </div> Full Width
+                                                            </label></div>
+                                                        <div class="ts-row"><label class="check">
+                                                                <div class="iradio_minimal-grey"
+                                                                    style="position: relative;"><input type="radio"
+                                                                        class="iradio" name="st_layout_boxed" value="1"
+                                                                        style="position: absolute; opacity: 0;"><ins
+                                                                        class="iCheck-helper"
+                                                                        style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                                                                </div> Boxed
+                                                            </label></div>
+                                                        <div class="ts-title">Options</div>
+                                                        <div class="ts-row"><label class="check">
+                                                                <div class="icheckbox_minimal-grey"
+                                                                    style="position: relative;"><input type="checkbox"
+                                                                        class="icheckbox" name="st_head_fixed" value="1"
+                                                                        style="position: absolute; opacity: 0;"><ins
+                                                                        class="iCheck-helper"
+                                                                        style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                                                                </div> Fixed Header
+                                                            </label></div>
+                                                        <div class="ts-row"><label class="check">
+                                                                <div class="icheckbox_minimal-grey checked"
+                                                                    style="position: relative;"><input type="checkbox"
+                                                                        class="icheckbox" name="st_sb_fixed" value="1"
+                                                                        checked=""
+                                                                        style="position: absolute; opacity: 0;"><ins
+                                                                        class="iCheck-helper"
+                                                                        style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                                                                </div> Fixed Sidebar
+                                                            </label></div>
+                                                        <div class="ts-row"><label class="check">
+                                                                <div class="icheckbox_minimal-grey checked"
+                                                                    style="position: relative;"><input type="checkbox"
+                                                                        class="icheckbox" name="st_sb_scroll" value="1"
+                                                                        style="position: absolute; opacity: 0;"><ins
+                                                                        class="iCheck-helper"
+                                                                        style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                                                                </div> Scroll Sidebar
+                                                            </label></div>
+                                                        <div class="ts-row"><label class="check">
+                                                                <div class="icheckbox_minimal-grey"
+                                                                    style="position: relative;"><input type="checkbox"
+                                                                        class="icheckbox" name="st_sb_right" value="1"
+                                                                        style="position: absolute; opacity: 0;"><ins
+                                                                        class="iCheck-helper"
+                                                                        style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                                                                </div> Right Sidebar
+                                                            </label></div>
+                                                        <div class="ts-row"><label class="check">
+                                                                <div class="icheckbox_minimal-grey"
+                                                                    style="position: relative;"><input type="checkbox"
+                                                                        class="icheckbox" name="st_sb_custom" value="1"
+                                                                        style="position: absolute; opacity: 0;"><ins
+                                                                        class="iCheck-helper"
+                                                                        style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                                                                </div> Custom Navigation
+                                                            </label></div>
+                                                        <div class="ts-row"><label class="check">
+                                                                <div class="icheckbox_minimal-grey"
+                                                                    style="position: relative;"><input type="checkbox"
+                                                                        class="icheckbox" name="st_sb_toggled" value="1"
+                                                                        style="position: absolute; opacity: 0;"><ins
+                                                                        class="iCheck-helper"
+                                                                        style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(6, 243, 144); border: 0px; opacity: 0;"></ins>
+                                                                </div> Toggled Navigation
+                                                            </label></div>
+                                                    </div>
+                                                
+
+                                        </font>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
             <div class="login-footer">
                 <div class="pull-left">
@@ -85,38 +200,38 @@
                 </div>
             </div>
         </div>
-        
+
     </div>
-<!-- END MESSAGE BOX-->
+    <!-- END MESSAGE BOX-->
 
-<!-- START PRELOADS -->
-<audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
-<audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
-<!-- END PRELOADS -->
+    <!-- START PRELOADS -->
+    <audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
+    <audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
+    <!-- END PRELOADS -->
 
-<!-- START SCRIPTS -->
-<!-- START PLUGINS -->
-<script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
-<script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>
-<!-- END PLUGINS -->
+    <!-- START SCRIPTS -->
+    <!-- START PLUGINS -->
+    <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- END PLUGINS -->
 
-<!-- THIS PAGE PLUGINS -->
-<script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>
-<script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
+    <!-- THIS PAGE PLUGINS -->
+    <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>
+    <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
 
-<script type="text/javascript" src="js/plugins/smartwizard/jquery.smartWizard-2.0.min.js"></script>
-<script type="text/javascript" src="js/plugins/jquery-validation/jquery.validate.js"></script>
-<!-- END PAGE PLUGINS -->
+    <script type="text/javascript" src="js/plugins/smartwizard/jquery.smartWizard-2.0.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery-validation/jquery.validate.js"></script>
+    <!-- END PAGE PLUGINS -->
 
-<!-- START TEMPLATE -->
-<script type="text/javascript" src="js/settings.js"></script>
+    <!-- START TEMPLATE -->
+    <script type="text/javascript" src="js/settings.js"></script>
 
-<script type="text/javascript" src="js/plugins.js"></script>
-<script type="text/javascript" src="js/actions.js"></script>
-<!-- END TEMPLATE -->
-<!-- END SCRIPTS -->
-
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/actions.js"></script>
+    <!-- END TEMPLATE -->
+    <!-- END SCRIPTS -->
+    <!-- <script src="./js/auth.js"> </script>      -->
 </body>
 
 </html>
