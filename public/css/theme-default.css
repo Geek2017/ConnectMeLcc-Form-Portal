@@ -3382,8 +3382,32 @@ td.dataTables_empty {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#95b75d, endColorstr=#89ad4d, GradientType=0);
 }
 .widget.widget-info {
-background: #1caf9a !important;  
+background: #1caf9a ;  
 }
+
+.wblue {
+  background: #428bca!important ;  
+ 
+}
+
+.wpblue {
+  border-top-color: #428bca!important ; 
+}
+
+.xnavblue{
+  background:#428bca!important;
+}
+
+.pps2blue {
+  border-top-color:#428bca!important;
+}
+
+
+
+
+
+
+
 .widget.widget-warning {
   background: #1caf9a;
   background: -moz-linear-gradient(top, #1caf9a 0%, #fe970a 100%);
