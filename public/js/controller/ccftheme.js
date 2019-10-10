@@ -8,10 +8,13 @@ $(document).ready(function(){
 
       $("#cpr").click(function(){
           console.log('click');
-        setTimeout(function(){
+        setInterval(function(){
             localStorage.setItem('unicolor',$("#dcpr").val());}, 
-             5000);
+             100);
       });
+
+     
+      
       
     $(".widget.widget-info").css("background", localStorage.getItem('unicolor'));
     $(".panel.panel-warning").css("border-top-color", localStorage.getItem('unicolor'));
