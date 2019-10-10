@@ -1,28 +1,70 @@
 $(document).ready(function(){
-    
-    var wblue=localStorage.getItem('wblue');
-    var wpblue=localStorage.getItem('wpblue');
-    var xnavblue=localStorage.getItem('xnavblue');
-    var pps2xnavblue=localStorage.getItem('pps2xnavblue');
 
-    $(".widget.widget-info").addClass(wblue);
-    $(".panel.panel-warning").addClass(wpblue);
-    $(".x-navigation > li.xn-logo > a:first-child").addClass(xnavblue);
-    $(".panel.panel-success").addClass(pps2xnavblue);
+
+
+
+  $("#theme").attr("href", localStorage.getItem('theme'))
+
+
+      $("#cpr").click(function(){
+          console.log('click');
+        setTimeout(function(){
+            localStorage.setItem('unicolor',$("#dcpr").val());}, 
+             5000);
+      });
+      
+    $(".widget.widget-info").css("background", localStorage.getItem('unicolor'));
+    $(".panel.panel-warning").css("border-top-color", localStorage.getItem('unicolor'));
+    $(".x-navigation>li.xn-logo>a:first-child").css("background", localStorage.getItem('unicolor'));
+    $(".panel.panel-success").css("border-top-color", localStorage.getItem('unicolor'));
     
+    
+    
+     
+    //theme color
+
+    $("#default").click(function(){
+     localStorage.setItem('theme','css/theme-default.css')
+    });
+    
+    $("#brown").click(function(){
+      localStorage.setItem('theme','css/theme-brown.css')
+    });
 
     $("#blue").click(function(){
-    
-  
-        var wblue=localStorage.setItem('wblue','wblue');
-        var wpblue=localStorage.setItem('wpblue','wpblue');
-        var xnavblue=localStorage.setItem('xnavblue','xnavblue');
-        var pps2xnavblue=localStorage.setItem('pps2xnavblue','pps2xnavblue');
-    
-        $(".widget.widget-info").addClass(wblue);
-        $(".panel.panel-warning").addClass(wpblue);
-        $(".x-navigation > li.xn-logo > a:first-child").addClass(xnavblue);
-        $(".panel.panel-success").addClass(pps2xnavblue);
+      localStorage.setItem('theme','css/theme-blue.css')
     });
- 
+    
+    $("#white").click(function(){
+      localStorage.setItem('theme','css/theme-white.css')
+    });
+
+    $("#black").click(function(){
+      localStorage.setItem('theme','css/theme-black.css')
+    });
+
+    //form color
+    $("#green").click(function(){
+      localStorage.setItem('unicolor','green')
+     });
+
+     $("#blue").click(function(){
+      localStorage.setItem('unicolor','blue')
+     });
+
+     $("#grey").click(function(){
+      localStorage.setItem('unicolor','grey')
+     });
+
+     $("#red").click(function(){
+      localStorage.setItem('unicolor','red')
+     });
+
+     $("#blue").click(function(){
+      localStorage.setItem('unicolor','blue')
+     });
+
+     $("#orange").click(function(){
+      localStorage.setItem('unicolor','orange')
+     });
 });

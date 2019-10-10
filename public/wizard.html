@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en" class="body-full-height">
 
 <head>
@@ -60,20 +60,20 @@
                                     <div class="form-group">
                                         <label class="col-md-2 control-label"> Logo:</label>
                                         <div class="col-md-10">
-                                            <input type="file" class="form-control" placeholder="Your name" />
+                                            <input type="file" class="form-control" placeholder="Company Name" required/>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="col-md-2 control-label"> Name:</label>
                                         <div class="col-md-10">
-                                            <input type="text" class="form-control" placeholder="Your name" />
+                                            <input type="text" class="form-control" placeholder="Compy address" required/>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="col-md-2 control-label"> Address:</label>
                                         <div class="col-md-10">
                                             <textarea class="form-control" rows="5"
-                                                placeholder="Something about you"></textarea>
+                                                placeholder="Something about you" readonly></textarea>
                                         </div>
                                     </div>
                                 </font>
@@ -86,20 +86,27 @@
                                             <div class="form-group theme-set">
                                                 <div class="ts-body theme-set">
                                                     <div class="ts-title">Themes</div>
-                                                    <div class="ts-themes"><a href="#" class="active"
+                                                    <div class="ts-themes">
+                                                        <a href="#" id="default" class="active"
                                                             data-theme="css/theme-default.css"><img
-                                                                src="img/themes/default.jpg"></a><a href="#"
+                                                                src="img/themes/default.jpg"></a>
+                                                                <a href="#" id="brown"
                                                             data-theme="css/theme-brown.css"><img
-                                                                src="img/themes/brown.jpg"></a><a href="#"
+                                                                src="img/themes/brown.jpg"></a>
+                                                                <a href="#" id="blue"
                                                             data-theme="css/theme-blue.css"><img
-                                                                src="img/themes/blue.jpg"></a><a href="#"
+                                                                src="img/themes/blue.jpg"></a>
+                                                                <a href="#" id="white"
                                                             data-theme="css/theme-white.css"><img
-                                                                src="img/themes/light.jpg"></a><a href="#"
+                                                                src="img/themes/light.jpg"></a>
+                                                                <a href="#" id="black"
                                                             data-theme="css/theme-black.css"><img
-                                                                src="img/themes/green.jpg"></a></div>
+                                                                src="img/themes/green.jpg"></a>
+                                                        </div>
 
-                                                    <div class="ts-title">Form Theme</div>
-                                                    <div class="form-c"><a href="#" id="default"
+                                                    <div class="ts-title">Form Theme Color</div>
+                                                        <!-- <div class="row">    -->
+                                                            <div class=" form-c"><a href="#" id="default"
                                                             ><img
                                                                 src="img/themes/normal.jpg"></a><a href="#"  id="grey"
                                                            ><img
@@ -109,7 +116,20 @@
                                                             ><img
                                                                 src="img/themes/bl.jpg"></a><a href="#" id="orange"
                                                             ><img
-                                                                src="img/themes/orange.jpg"></a></div>
+                                                                src="img/themes/orange.jpg"></a>
+                                                                
+                                                            </div>
+
+                                                            <div class="ts-title">Custom Color</div>
+                                                            <div class="col-md-2 input-group color"
+                                                                data-color="rgb(255, 255, 255)" data-color-format="rgb"
+                                                                id="colorpicker" style="padding-left: 0px;padding-right: 0px;">
+                                                                <input id="dcpr" type="text" class="btn-xs form-control" readonly="" style="width: 113px; height: 20px;">
+                                                                <span id="cpr" class="input-group-addon" ><i
+                                                                        style="background-color: rgb(255, 255, 255);"></i>
+                                                                </span>
+                                                            </div>
+                                                        <!-- </div> -->
                                                     <div class="ts-title">Layout</div>
                                                     <div class="ts-row"><label class="check">
                                                             <div class="iradio_minimal-grey checked"
@@ -229,7 +249,7 @@
     <!-- THIS PAGE PLUGINS -->
     <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>
     <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
-
+    <script type="text/javascript" src="js/plugins/bootstrap/bootstrap-colorpicker.js"></script>
     <script type="text/javascript" src="js/plugins/smartwizard/jquery.smartWizard-2.0.min.js"></script>
     <script type="text/javascript" src="js/plugins/jquery-validation/jquery.validate.js"></script>
     <!-- END PAGE PLUGINS -->

@@ -377,15 +377,7 @@ color:#fff;
   content: "\f147";
   color:#fff;
 }
-.x-navigation li.active > a {
-  background: #1caf9a;
-  color:#fff;
-  -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
-  -ms-transition: all 200ms ease;
-  -o-transition: all 200ms ease;
-  transition: all 200ms ease;
-}
+
 .x-navigation li.active > a .fa,
 .x-navigation li.active > a .glyphicon {
   color: #fff;
@@ -3387,7 +3379,7 @@ td.dataTables_empty {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#95b75d, endColorstr=#89ad4d, GradientType=0);
 }
 .widget.widget-info {
-  background: #1caf9a !important;
+  background: #1caf9a ;
 }
 .widget.widget-warning {
   background: #1caf9a;
