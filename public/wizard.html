@@ -2,9 +2,7 @@
 <html lang="en" class="body-full-height">
 
 <head>
-    <script>
-    localStorage.setItem('theme','css/theme-blue.css')    
-    </script>
+    
     <!-- META SECTION -->
     <title>Form Portal</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -62,20 +60,25 @@
                                     <div class="form-group">
                                         <label class="col-md-2 control-label"> Logo:</label>
                                         <div class="col-md-10">
-                                            <input type="file" class="form-control" placeholder="Company Name" required/>
+                                            <!-- <input type="file" class="form-control" placeholder="Company Name" required/> -->
+                                             <a class="file-input-wrapper btn btn-default  fileinput btn-primary"><input type="file" class="fileinput btn-primary " name="filename" id="filename" title="Browse file" ></a>
+                                         
+                                        
                                         </div>
+                                                                                                                                                                        
+                                           
                                     </div>
                                     <div class="form-group">
                                         <label class="col-md-2 control-label"> Name:</label>
                                         <div class="col-md-10">
-                                            <input type="text" class="form-control" placeholder="Compy address" required/>
+                                            <input type="text" class="form-control" placeholder="Compy address" />
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="col-md-2 control-label"> Address:</label>
                                         <div class="col-md-10">
                                             <textarea class="form-control" rows="5"
-                                                placeholder="Something about you" readonly></textarea>
+                                                placeholder="Something about you" ></textarea>
                                         </div>
                                     </div>
                                 </font>
@@ -108,18 +111,12 @@
 
                                                     <div class="ts-title">Form Theme Color</div>
                                                         <!-- <div class="row">    -->
-                                                            <div class=" form-c"><a href="#" id="default"
-                                                            ><img
-                                                                src="img/themes/normal.jpg"></a><a href="#"  id="grey"
-                                                           ><img
-                                                                src="img/themes/grey.jpg"></a><a href="#" id="red"
-                                                            ><img
-                                                                src="img/themes/red.jpg"></a><a href="#" id="blue"
-                                                            ><img
-                                                                src="img/themes/bl.jpg"></a><a href="#" id="orange"
-                                                            ><img
-                                                                src="img/themes/orange.jpg"></a>
-                                                                
+                                                            <div class=" form-c">
+                                                            <a href="#" id="green"><img src="img/themes/normal.jpg"></a>
+                                                            <a href="#" id="grey"><img src="img/themes/grey.jpg"></a>
+                                                            <a href="#" id="red"><img src="img/themes/red.jpg"></a>
+                                                            <a href="#" id="bl"><img src="img/themes/bl.jpg"></a>
+                                                            <a href="#" id="orange"><img src="img/themes/orange.jpg"></a>     
                                                             </div>
 
                                                             <div class="ts-title">Custom Color</div>
@@ -244,6 +241,8 @@
     <!-- START SCRIPTS -->
     <!-- START PLUGINS -->
     <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/controller/ccftheme.js"></script>
+
     <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>
     <!-- END PLUGINS -->
@@ -254,6 +253,8 @@
     <script type="text/javascript" src="js/plugins/bootstrap/bootstrap-colorpicker.js"></script>
     <script type="text/javascript" src="js/plugins/smartwizard/jquery.smartWizard-2.0.min.js"></script>
     <script type="text/javascript" src="js/plugins/jquery-validation/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/plugins/bootstrap/bootstrap-file-input.js"></script>
+
     <!-- END PAGE PLUGINS -->
 
     <!-- START TEMPLATE -->
@@ -261,7 +262,7 @@
    
     <script type="text/javascript" src="js/plugins.js"></script>
     <script type="text/javascript" src="js/actions.js"></script>
-    <script type="text/javascript" src="js/controller/ccftheme.js"></script>
+    
 
     <!-- END TEMPLATE -->
     <!-- END SCRIPTS -->
