@@ -20,9 +20,9 @@ if(localStorage.getItem('theme')==null){
 }
    
 
-   if(localStorage.getItem('theme')=='css/theme-default.css'){
+
   $("#theme").prop("href", localStorage.getItem('theme'));
-}
+
 
 
 $("#logout").click(function(){
