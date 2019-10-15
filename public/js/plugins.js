@@ -258,38 +258,41 @@ $(function() {
                 
                 // This par of code used for example
                 if($("#wizard-validation").length > 0){
-                    
                     var validator = $("#wizard-validation").validate({
-                            rules: {
-                                login: {
-                                    required: true,
-                                    minlength: 2,
-                                    maxlength: 8
-                                },
-                                password: {
-                                    required: true,
-                                    minlength: 5,
-                                    maxlength: 10
-                                },
-                                repassword: {
-                                    required: true,
-                                    minlength: 5,
-                                    maxlength: 10,
-                                    equalTo: "#password"
-                                },
-                                email: {
-                                    required: true,
-                                    email: true
-                                },
-                                name: {
-                                    required: true,
-                                    maxlength: 10
-                                },
-                                adress: {
-                                    required: true
-                                }
+                        rules: {
+                            data: {
+                                required: true,
+                                minlength: 2,
+                                maxlength: 30
+                            },
+                            password: {
+                                required: true,
+                                minlength: 5,
+                                maxlength: 30
+                            },
+                            repassword: {
+                                required: true,
+                                minlength: 5,
+                                maxlength: 30,
+                                equalTo: "#registerPassword"
+                            },
+                            email: {
+                                required: true,
+                                email: true
+                            },
+                            name: {
+                                required: true,
+                                maxlength: 10
+                            },
+                            address: {
+                                required: true
+                            },
+                            Contact: {
+                                required: true
                             }
-                        });
+
+                        }
+                    });
                         
                 }// End of example
                 

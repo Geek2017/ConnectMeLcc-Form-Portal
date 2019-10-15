@@ -1,8 +1,7 @@
-
 <html lang="en" class="body-full-height">
 
 <head>
-    
+
     <!-- META SECTION -->
     <title>Form Portal</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -23,201 +22,247 @@
 
         <div class="login-box animated fadeInDown" style="width:800px!important">
             <div class="text-center">
-                <img class="img-responsive"src="./img/form-logo.png" alt="logo"  style="height: 10%;" > <br>
-                
+                <img class="img-responsive" src="./img/CCM.png" alt="logo" style="height: 12%;width: 100%;"> <br>
+
             </div>
             <div class="login-body">
                 <div class="login-title"><strong>Welcome</strong>, Please Set Up your workspace</div>
+
                 <div class="block">
 
-                    <form action="main.html" role="form" class="form-horizontal">
-                        <div class="wizard show-submit">
+                    <form action="#" role="form" class="form-horizontal"
+                        id="wizard-validation">
+                        <div class="wizard show-submit wizard-validation">
                             <ul>
+
                                 <li>
-                                    <a href="#step-5">
+                                    <a href="#step-0">
                                         <span class="stepNumber">1</span>
-                                        <span class="stepDesc"><br /><small>
-                                                <h4>
-                                                    <font color="white">Company Info</font>
-                                                </h4>
-                                            </small></span>
+                                        <span class="stepDesc" style="color: white;">Login<br /><small
+                                                style="color: white;">Credentials</small></span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#step-6">
+                                    <a href="#step-1">
                                         <span class="stepNumber">2</span>
-                                        <span class="stepDesc"><br /><small>
-                                                <h4>
-                                                    <font color="white">Theme Settings</font>
-                                                </h4>
-                                            </small></span>
+                                        <span class="stepDesc" style="color: white;">Company<br /><small
+                                                style="color: white;">Information</small></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#step-2">
+                                        <span class="stepNumber">3</span>
+                                        <span class="stepDesc" style="color: white;">Theme Seetings<br /><small
+                                                style="color: white;">Information</small></span>
                                     </a>
                                 </li>
                             </ul>
-                            <div id="step-5">
-                                <font color="white">
 
-                                    <div class="form-group">
-                                        <label class="col-md-2 control-label"> Logo:</label>
-                                        <div class="col-md-10">
-                                            <!-- <input type="file" class="form-control" placeholder="Company Name" required/> -->
-                                             <a class="file-input-wrapper btn btn-default  fileinput btn-primary"><input type="file" class="fileinput btn-primary " name="filename" id="filename" title="Browse file" ></a>
-                                         
-                                        
-                                        </div>
-                                                                                                                                                                        
-                                           
+                            <div id="step-0">
+
+                                <div class="form-group">
+                                    <label  class="col-md-2 control-label" style="color: white;">Client ID:</label>
+                                    <div class="col-md-10">
+                                        <input id="comid" type="text" class="form-control" name="data" placeholder="Client ID" />
                                     </div>
-                                    <div class="form-group">
-                                        <label class="col-md-2 control-label"> Name:</label>
-                                        <div class="col-md-10">
-                                            <input type="text" class="form-control" placeholder="Compy address" />
-                                        </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label" style="color: white;">Email:</label>
+                                    <div class="col-md-10">
+                                        <input id="mailid" type="text" class="form-control" name="email" placeholder="email" />
                                     </div>
-                                    <div class="form-group">
-                                        <label class="col-md-2 control-label"> Address:</label>
-                                        <div class="col-md-10">
-                                            <textarea class="form-control" rows="5"
-                                                placeholder="Something about you" ></textarea>
-                                        </div>
+                                </div>
+                                <div class="form-group">
+                                    <label  class="col-md-2 control-label" style="color: white;">Password:</label>
+                                    <div class="col-md-10">
+                                        <input id="registerPassword" type="password" class="form-control" name="password"
+                                            placeholder="Password"  />
                                     </div>
-                                </font>
-                            </div>
-                            <div id="step-6">
-                                <div class="col-md-12">
-                                    <div class="row">
-
-                                        <font color="white">
-                                            <div class="form-group theme-set">
-                                                <div class="ts-body theme-set">
-                                                    <div class="ts-title">Themes</div>
-                                                    <div class="ts-themes">
-                                                        <a href="#" id="default" class="active"
-                                                            data-theme="css/theme-default.css"><img
-                                                                src="img/themes/default.jpg"></a>
-                                                                <a href="#" id="brown"
-                                                            data-theme="css/theme-brown.css"><img
-                                                                src="img/themes/brown.jpg"></a>
-                                                                <a href="#" id="blue"
-                                                            data-theme="css/theme-blue.css"><img
-                                                                src="img/themes/blue.jpg"></a>
-                                                                <a href="#" id="white"
-                                                            data-theme="css/theme-white.css"><img
-                                                                src="img/themes/light.jpg"></a>
-                                                                <a href="#" id="black"
-                                                            data-theme="css/theme-black.css"><img
-                                                                src="img/themes/green.jpg"></a>
-                                                        </div>
-
-                                                    <div class="ts-title">Form Theme Color</div>
-                                                        <!-- <div class="row">    -->
-                                                            <div class=" form-c">
-                                                            <a href="#" id="green"><img src="img/themes/normal.jpg"></a>
-                                                            <a href="#" id="grey"><img src="img/themes/grey.jpg"></a>
-                                                            <a href="#" id="red"><img src="img/themes/red.jpg"></a>
-                                                            <a href="#" id="bl"><img src="img/themes/bl.jpg"></a>
-                                                            <a href="#" id="orange"><img src="img/themes/orange.jpg"></a>     
-                                                            </div>
-
-                                                            <div class="ts-title">Custom Color</div>
-                                                            <div class="col-md-2 input-group color"
-                                                                data-color="rgb(255, 255, 255)" data-color-format="rgb"
-                                                                id="colorpicker" style="padding-left: 0px;padding-right: 0px;">
-                                                                <input id="dcpr" type="text" class="btn-xs form-control" readonly="" style="width: 113px; height: 20px;">
-                                                                <span id="cpr" class="input-group-addon" ><i
-                                                                        style="background-color: rgb(255, 255, 255);"></i>
-                                                                </span>
-                                                            </div>
-                                                        <!-- </div> -->
-                                                    <div class="ts-title">Layout</div>
-                                                    <div class="ts-row"><label class="check">
-                                                            <div class="iradio_minimal-grey checked"
-                                                                style="position: relative;"><input type="radio"
-                                                                    class="iradio" name="st_layout_boxed" value="1"
-                                                                    checked=""
-                                                                    style="position: absolute; opacity: 0;"><ins
-                                                                    class="iCheck-helper"
-                                                                    style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
-                                                            </div> Full Width
-                                                        </label></div>
-                                                    <div class="ts-row"><label class="check">
-                                                            <div class="iradio_minimal-grey"
-                                                                style="position: relative;"><input type="radio"
-                                                                    class="iradio" name="st_layout_boxed" value="1"
-                                                                    style="position: absolute; opacity: 0;"><ins
-                                                                    class="iCheck-helper"
-                                                                    style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
-                                                            </div> Boxed
-                                                        </label></div>
-                                                    <div class="ts-title">Options</div>
-                                                    <div class="ts-row"><label class="check">
-                                                            <div class="icheckbox_minimal-grey"
-                                                                style="position: relative;"><input type="checkbox"
-                                                                    class="icheckbox" name="st_head_fixed" value="1"
-                                                                    style="position: absolute; opacity: 0;"><ins
-                                                                    class="iCheck-helper"
-                                                                    style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
-                                                            </div> Fixed Header
-                                                        </label></div>
-                                                    <div class="ts-row"><label class="check">
-                                                            <div class="icheckbox_minimal-grey checked"
-                                                                style="position: relative;"><input type="checkbox"
-                                                                    class="icheckbox" name="st_sb_fixed" value="1"
-                                                                    checked=""
-                                                                    style="position: absolute; opacity: 0;"><ins
-                                                                    class="iCheck-helper"
-                                                                    style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
-                                                            </div> Fixed Sidebar
-                                                        </label></div>
-                                                    <div class="ts-row"><label class="check">
-                                                            <div class="icheckbox_minimal-grey checked"
-                                                                style="position: relative;"><input type="checkbox"
-                                                                    class="icheckbox" name="st_sb_scroll" value="1"
-                                                                    style="position: absolute; opacity: 0;"><ins
-                                                                    class="iCheck-helper"
-                                                                    style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
-                                                            </div> Scroll Sidebar
-                                                        </label></div>
-                                                    <div class="ts-row"><label class="check">
-                                                            <div class="icheckbox_minimal-grey"
-                                                                style="position: relative;"><input type="checkbox"
-                                                                    class="icheckbox" name="st_sb_right" value="1"
-                                                                    style="position: absolute; opacity: 0;"><ins
-                                                                    class="iCheck-helper"
-                                                                    style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
-                                                            </div> Right Sidebar
-                                                        </label></div>
-                                                    <div class="ts-row"><label class="check">
-                                                            <div class="icheckbox_minimal-grey"
-                                                                style="position: relative;"><input type="checkbox"
-                                                                    class="icheckbox" name="st_sb_custom" value="1"
-                                                                    style="position: absolute; opacity: 0;"><ins
-                                                                    class="iCheck-helper"
-                                                                    style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
-                                                            </div> Custom Navigation
-                                                        </label></div>
-                                                    <div class="ts-row"><label class="check">
-                                                            <div class="icheckbox_minimal-grey"
-                                                                style="position: relative;"><input type="checkbox"
-                                                                    class="icheckbox" name="st_sb_toggled" value="1"
-                                                                    style="position: absolute; opacity: 0;"><ins
-                                                                    class="iCheck-helper"
-                                                                    style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(6, 243, 144); border: 0px; opacity: 0;"></ins>
-                                                            </div> Toggled Navigation
-                                                        </label></div>
-
-                                                </div>
-
-
-                                        </font>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label" style="color: white;">Re-Password:</label>
+                                    <div class="col-md-10">
+                                        <input id="registerConfirmPassword" type="password" class="form-control" name="repassword"
+                                            placeholder="Re-Password" />
                                     </div>
                                 </div>
 
                             </div>
+
+                            <div id="step-1">
+
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label" style="color: white;"> Logo:</label>
+                                    <div class="col-md-10">
+
+                                        <a class="file-input-wrapper btn btn-default  fileinput btn-primary" name="data"><input
+                                                type="file" class="fileinput btn-primary " name="filename" id="filename"
+                                                title="Browse file" name="data"></a>
+
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label  class="col-md-2 control-label" style="color: white;">Company
+                                        &nbsp;&nbsp;Name:</label>
+                                    <div class="col-md-10">
+                                        <input id="comname" type="text" class="form-control" name="data"
+                                            placeholder="Company Name" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label" style="color: white;">Company
+                                        Contact:</label>
+                                    <div class="col-md-10">
+                                        <input type="number" class="form-control" name="Contact"
+                                            placeholder="Company Contact" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label" style="color: white;">Company
+                                        Address:</label>
+                                    <div class="col-md-10">
+                                        <!-- <input type="text"  name="Company Address" placeholder="Company Address"/> -->
+                                        <textarea name="address" id="" class="form-control" rows="3"
+                                            placeholder="Complete Address"></textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div id="step-2">
+
+                                <div class="row">
+
+                                    <font color="white">
+                                        <div class="form-group theme-set">
+                                            <div class="ts-body theme-set">
+                                                <div class="ts-title">Themes</div>
+                                                <div class="ts-themes">
+                                                    <a href="#" id="default" class="active"
+                                                        data-theme="css/theme-default.css"><img
+                                                            src="img/themes/default.jpg"></a>
+                                                    <a href="#" id="brown" data-theme="css/theme-brown.css"><img
+                                                            src="img/themes/brown.jpg"></a>
+                                                    <a href="#" id="blue" data-theme="css/theme-blue.css"><img
+                                                            src="img/themes/blue.jpg"></a>
+                                                    <a href="#" id="white" data-theme="css/theme-white.css"><img
+                                                            src="img/themes/light.jpg"></a>
+                                                    <a href="#" id="black" data-theme="css/theme-black.css"><img
+                                                            src="img/themes/green.jpg"></a>
+                                                </div>
+
+                                                <div class="ts-title">Form Theme Color</div>
+
+                                                <div class=" form-c">
+                                                    <a href="#" id="green"><img src="img/themes/normal.jpg"></a>
+                                                    <a href="#" id="grey"><img src="img/themes/grey.jpg"></a>
+                                                    <a href="#" id="red"><img src="img/themes/red.jpg"></a>
+                                                    <a href="#" id="bl"><img src="img/themes/bl.jpg"></a>
+                                                    <a href="#" id="orange"><img src="img/themes/orange.jpg"></a>
+                                                </div>
+
+                                                <div class="ts-title">Custom Color</div>
+                                                <div class="col-md-2 input-group color" data-color="rgb(255, 255, 255)"
+                                                    data-color-format="rgb" id="colorpicker"
+                                                    style="padding-left: 0px;padding-right: 0px;">
+                                                    <input id="dcpr" type="text" class="btn-xs form-control" readonly=""
+                                                        style="width: 113px; height: 20px;">
+                                                    <span id="cpr" class="input-group-addon"><i
+                                                            style="background-color: rgb(255, 255, 255);"></i>
+                                                    </span>
+                                                </div>
+
+                                                <div class="ts-title">Layout</div>
+                                                <div class="ts-row"><label class="check">
+                                                        <div class="iradio_minimal-grey checked"
+                                                            style="position: relative;"><input type="radio"
+                                                                class="iradio" name="st_layout_boxed" value="1"
+                                                                checked="" style="position: absolute; opacity: 0;"><ins
+                                                                class="iCheck-helper"
+                                                                style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                                                        </div> Full Width
+                                                    </label></div>
+                                                <div class="ts-row"><label class="check">
+                                                        <div class="iradio_minimal-grey" style="position: relative;">
+                                                            <input type="radio" class="iradio" name="st_layout_boxed"
+                                                                value="1" style="position: absolute; opacity: 0;"><ins
+                                                                class="iCheck-helper"
+                                                                style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                                                        </div> Boxed
+                                                    </label></div>
+                                                <div class="ts-title">Options</div>
+                                                <div class="ts-row"><label class="check">
+                                                        <div class="icheckbox_minimal-grey" style="position: relative;">
+                                                            <input type="checkbox" class="icheckbox"
+                                                                name="st_head_fixed" value="1"
+                                                                style="position: absolute; opacity: 0;"><ins
+                                                                class="iCheck-helper"
+                                                                style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                                                        </div> Fixed Header
+                                                    </label></div>
+                                                <div class="ts-row"><label class="check">
+                                                        <div class="icheckbox_minimal-grey checked"
+                                                            style="position: relative;"><input type="checkbox"
+                                                                class="icheckbox" name="st_sb_fixed" value="1"
+                                                                checked="" style="position: absolute; opacity: 0;"><ins
+                                                                class="iCheck-helper"
+                                                                style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                                                        </div> Fixed Sidebar
+                                                    </label></div>
+                                                <div class="ts-row"><label class="check">
+                                                        <div class="icheckbox_minimal-grey checked"
+                                                            style="position: relative;"><input type="checkbox"
+                                                                class="icheckbox" name="st_sb_scroll" value="1"
+                                                                style="position: absolute; opacity: 0;"><ins
+                                                                class="iCheck-helper"
+                                                                style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                                                        </div> Scroll Sidebar
+                                                    </label></div>
+                                                <div class="ts-row"><label class="check">
+                                                        <div class="icheckbox_minimal-grey" style="position: relative;">
+                                                            <input type="checkbox" class="icheckbox" name="st_sb_right"
+                                                                value="1" style="position: absolute; opacity: 0;"><ins
+                                                                class="iCheck-helper"
+                                                                style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                                                        </div> Right Sidebar
+                                                    </label></div>
+                                                <div class="ts-row"><label class="check">
+                                                        <div class="icheckbox_minimal-grey" style="position: relative;">
+                                                            <input type="checkbox" class="icheckbox" name="st_sb_custom"
+                                                                value="1" style="position: absolute; opacity: 0;"><ins
+                                                                class="iCheck-helper"
+                                                                style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                                                        </div> Custom Navigation
+                                                    </label></div>
+                                                <div class="ts-row"><label class="check">
+                                                        <div class="icheckbox_minimal-grey" style="position: relative;">
+                                                            <input type="checkbox" class="icheckbox"
+                                                                name="st_sb_toggled" value="1"
+                                                                style="position: absolute; opacity: 0;"><ins
+                                                                class="iCheck-helper"
+                                                                style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(6, 243, 144); border: 0px; opacity: 0;"></ins>
+                                                        </div> Toggled Navigation
+                                                    </label></div>
+
+                                            </div>
+
+
+                                    </font>
+                                </div>
+
+
+                            </div>
+
                         </div>
                     </form>
                 </div>
+
             </div>
+
             <div class="login-footer">
                 <div class="pull-left">
                     &copy; 2019 FormPortal
@@ -228,6 +273,7 @@
                     <a href="#">Contact Us</a>
                 </div>
             </div>
+
         </div>
 
     </div>
@@ -246,7 +292,7 @@
     <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>
     <!-- END PLUGINS -->
-    
+
     <!-- THIS PAGE PLUGINS -->
     <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>
     <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
@@ -257,13 +303,17 @@
 
     <!-- END PAGE PLUGINS -->
 
+    <script src="js/controller/script.js"></script>
+
     <!-- START TEMPLATE -->
     <script type="text/javascript" src="js/settings.js"></script>
-   
+
     <script type="text/javascript" src="js/plugins.js"></script>
     <script type="text/javascript" src="js/actions.js"></script>
-    
 
+   
+    
+    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
     <!-- END TEMPLATE -->
     <!-- END SCRIPTS -->
     <!-- <script src="./js/auth.js"> </script>      -->

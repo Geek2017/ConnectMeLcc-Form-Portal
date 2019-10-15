@@ -304,6 +304,7 @@ $.extend( $.validator, {
 	setDefaults: function( settings ) {
 		$.extend( $.validator.defaults, settings );
 	},
+	
 
 	messages: {
 		required: "This field is required.",
@@ -1353,5 +1354,8 @@ $.extend($.fn, {
 		});
 	}
 });
+
+
+
 
 }));
