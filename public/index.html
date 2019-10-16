@@ -1,52 +1,59 @@
 <!DOCTYPE html>
 <html lang="en" class="body-full-height">
-    <head>  
-         
-        <!-- META SECTION -->
-        <title>Form Portal</title>            
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
-        <!-- END META SECTION -->
-        
-        <!-- CSS INCLUDE -->        
-        <link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css"/>
-        <!-- EOF CSS INCLUDE -->                                    
-    </head>
-    <body>
-        
-        <div class="login-container">
-        
+
+<head>
+
+    <!-- META SECTION -->
+    <title>Form Portal</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- END META SECTION -->
+
+    <!-- CSS INCLUDE -->
+    <link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css" />
+    <!-- EOF CSS INCLUDE -->
+</head>
+
+<body>
+
+    <div class="login-container">
+        <form action="#" role="form" class="form-horizontal" id="loginForm">
             <div class="login-box animated fadeInDown">
                 <div class="login-logo"></div>
                 <div class="login-body">
                     <div class="login-title"><strong>Welcome</strong>, Please login</div>
-                    <form action="wizard.html" class="form-horizontal" method="post">
+
                     <div class="form-group">
                         <div class="col-md-12">
-                            <input type="text" class="form-control" placeholder="Username"/>
+                            <input id="loginEmail" type="text" class="form-control" placeholder="Email" required />
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-md-12">
-                            <input type="password" class="form-control" placeholder="Password"/>
+                            <input id="loginPassword" type="password" class="form-control" placeholder="Password"
+                                required />
                         </div>
                     </div>
                     <div class="form-group">
+                    
                         <div class="col-md-6">
-                          
-                                <button class="btn btn-success btn-block">Register</button>
-                           
+
+                            <input id="wizard" type="button" href="wizard.html" class="btn btn-success btn-block" value="Register
+                            ">
+
                         </div>
+                     
                       
-                        <div class="col-md-6">
-                            <button class="btn btn-info btn-block">Log In</button>
-                            <a href="#" class="btn btn-link btn-block pull-right">Forgot your password?</a>
-                        </div>
+                            <div class="col-md-6">
+                                <button class="btn btn-info btn-block">Log In</button>
+                                <a href="#" class="btn btn-link btn-block pull-right">Forgot your password?</a>
+                            </div>
+                        
                     </div>
-                    </form>
+
                 </div>
                 <div class="login-footer">
                     <div class="pull-left">
@@ -59,14 +66,12 @@
                     </div>
                 </div>
             </div>
-            
-        </div>
-        <!-- <script src="./js/auth.js"> </script>      -->
-    </body>
+        </form>
+    </div>
+    <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+    <script src="./js/controller/script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+    <!-- <script src="./js/auth.js"> </script>      -->
+</body>
+
 </html>
-
-
-
-
-
-

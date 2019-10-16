@@ -15,14 +15,22 @@ $(document).ready(function () {
       var usersRef = dbRef.ref('users')
       var auth = null;
 
-      //Register
+       
+    firebase.auth().onAuthStateChanged(function(user) {
+      if (user) {
+        console.log(user.displayName)
+        $('#uname').val(user.displayName);
+        $("#uname").text(user.displayName);
 
-
+      } else {
+        window.location.replace("./index.html");
+        
+      }
+    });
 
       $('#wizard-validation').on('submit', function (e) {
         e.preventDefault();
-        alert('90123');
-       
+      
         var data = {
           email: $('#mailid').val(),
           comname: $('#comname').val(),
@@ -49,4 +57,42 @@ $(document).ready(function () {
           }
         }  
       });
+
+      $('#loginForm').on('submit', function (e) {
+        e.preventDefault();
+       
+    
+        if( $('#loginEmail').val() != '' && $('#loginPassword').val() != '' ){
+          //login the user
+          var data = {
+            email: $('#loginEmail').val(),
+            password: $('#loginPassword').val()
+          };
+          firebase.auth().signInWithEmailAndPassword(data.email, data.password)
+            .then(function(authData) {
+              auth = authData;
+             
+             console.log(authData);
+             window.location.replace("./main.html");
+           
+            })
+            .catch(function(error) {
+              console.log("Login Failed!", error.message);
+              alert(error.message+' Check your input');
+           
+            });
+        }
+      });
+    
+      $('#logout').on('click', function(e) {
+        e.preventDefault();
+        firebase.auth().signOut(window.location.replace("./index.html"));
+       
+      });
+
+
+      $('#wizard').on('click', function(e) {
+        window.location.replace("wizard.html")
+      });
+
     });
