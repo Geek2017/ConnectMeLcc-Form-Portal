@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
  
-  
+  $('#container').css('visibility', 'hidden');
  
 
   $("#filename").change(function(){
@@ -23,20 +23,14 @@ if(localStorage.getItem('theme')==null){
   localStorage.setItem('theme','css/theme-default.css') 
 }else{
   $("#theme").prop("href", localStorage.getItem('theme'));
-  $('#container').css('visibility', 'hidden');
+  
 }
    
 setTimeout(function(){
   $('#container').css('visibility', 'visible');
- 
 },1000);
 
 
-
-
-// $("#logout").click(function(){
-// localStorage.clear();
-// });
 
       $("#cpr").click(function(){
           console.log('click');
