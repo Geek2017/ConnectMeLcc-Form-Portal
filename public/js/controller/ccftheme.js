@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+ 
+  
+ 
+
   $("#filename").change(function(){
     var file = document.querySelector('input[type=file]')['files'][0];
     var reader = new FileReader();
@@ -17,17 +21,22 @@ $("#logoimg").attr("src", localStorage.getItem('base64'));
 
 if(localStorage.getItem('theme')==null){
   localStorage.setItem('theme','css/theme-default.css') 
+}else{
+  $("#theme").prop("href", localStorage.getItem('theme'));
+  $('#container').css('visibility', 'hidden');
 }
    
+setTimeout(function(){
+  $('#container').css('visibility', 'visible');
+ 
+},1000);
 
 
-  $("#theme").prop("href", localStorage.getItem('theme'));
 
 
-
-$("#logout").click(function(){
-localStorage.clear();
-});
+// $("#logout").click(function(){
+// localStorage.clear();
+// });
 
       $("#cpr").click(function(){
           console.log('click');

@@ -19,12 +19,9 @@ $(document).ready(function () {
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
         console.log(user.displayName)
-        $('#uname').val(user.displayName);
+     
         $("#uname").text(user.displayName);
 
-      } else {
-        window.location.replace("./index.html");
-        
       }
     });
 
@@ -48,10 +45,15 @@ $(document).ready(function () {
               .createUserWithEmailAndPassword(data.email, passwords.password)
               .then(function(user) {
                console.log(user)
+               window.location.replace("./main.html")
                return user.updateProfile({
                 displayName: data.comname + '::' + data.comid
               })
-              })
+              }).catch(function(error) {
+                console.log("Registration Failed!", error.message);
+                alert(error.message+' Check your input');
+             
+              });
              
              
           }
@@ -86,8 +88,10 @@ $(document).ready(function () {
     
       $('#logout').on('click', function(e) {
         e.preventDefault();
-        firebase.auth().signOut(window.location.replace("./index.html"));
-       
+        firebase.auth().signOut().then(() => {
+          console.log('Out')
+          window.location.replace("./index.html");
+        });
       });
 
 
