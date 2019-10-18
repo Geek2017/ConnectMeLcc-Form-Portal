@@ -267,12 +267,12 @@ $(function() {
                             },
                             password: {
                                 required: true,
-                                minlength: 5,
+                                minlength: 8,
                                 maxlength: 30
                             },
                             repassword: {
                                 required: true,
-                                minlength: 5,
+                                minlength: 8,
                                 maxlength: 30,
                                 equalTo: "#registerPassword"
                             },
@@ -644,3 +644,13 @@ Object.size = function(obj) {
     }
     return size;
 };
+
+$("#registerPassword").passwordValidation({"confirmField": "#registerConfirmPassword"}, function(element, valid, match, failedCases) {
+
+    $("#errors").html("<span>" + failedCases.join("\n") + "</span>");
+  
+     if(valid) $(element).css("border","0.5px solid green");
+     if(!valid) $(element).css("border","0.5px solid red");
+     if(valid && match) $("#registerPassword").css("border","0.5px solid green") , $("#registerConfirmPassword").css("border","0.5px solid green");
+     if(!valid || !match) $("#registerPassword").css("border","0.5px solid red") , $("#registerConfirmPassword").css("border","0.5px solid green");
+});
