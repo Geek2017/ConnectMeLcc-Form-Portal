@@ -44,11 +44,21 @@ $(document).ready(function () {
             firebase.auth()
               .createUserWithEmailAndPassword(data.email, passwords.password)
               .then(function(user) {
-               console.log(user)
-               window.location.replace("./main.html")
-               return user.updateProfile({
-                displayName: data.comname + '::' + data.comid
-              })
+              
+               sendEmailVerification(data);
+
+               var comname = $('#comname').val();
+               var email=$('#mailid').val();
+               
+               function sendEmailVerification(data) {
+                comname = firebase.auth().currentUser;
+                email = data.email || user.email;
+                return user.emailVerified || user.sendEmailVerification({
+                  url: window.location.href + '?email=' + user.email,
+                });
+              }
+              console.log(user);
+              window.location.replace("./index.html");
               }).catch(function(error) {
                 console.log("Registration Failed!", error.message);
                 alert(error.message+' Check your input');
@@ -59,6 +69,8 @@ $(document).ready(function () {
           }
         }  
       });
+
+      
 
       $('#loginForm').on('submit', function (e) {
         e.preventDefault();
@@ -73,9 +85,13 @@ $(document).ready(function () {
           firebase.auth().signInWithEmailAndPassword(data.email, data.password)
             .then(function(authData) {
               auth = authData;
+             if(authData.emailVerified){
+              window.location.replace("./main.html");
+              console.log(authData);
+             }else{
+               alert('email not verified, please check your email for confirmation');
+             }
              
-             console.log(authData);
-             window.location.replace("./main.html");
            
             })
             .catch(function(error) {
@@ -94,21 +110,7 @@ $(document).ready(function () {
         });
       });
 
-      var email = document.querySelector('#resetloginEmail').value;
-             
-                
-
-      $("#resetEmail").on("submit", function (e) {
-              e.preventDefault();
-
-              const email = $('#resetloginEmail').val();
-              console.log(email);
-              
-              firebase.auth().sendPasswordResetEmail(email)
-              .then(function() {
-                  alert('Reset link has been sent to provided email address');
-              })
-          });
+     
 
       $('#wizard').on('click', function(e) {
         window.location.replace("wizard.html")
