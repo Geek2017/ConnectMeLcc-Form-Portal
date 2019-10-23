@@ -1,10 +1,10 @@
 $(document).ready(function () {
       //initialize the firebase app
       var config = {
-        apiKey: "AIzaSyAViE8I43AmabHmS3ZDhdnv_u6psVEOO5g",
-        authDomain: "formportal2019.firebaseapp.com",
-        databaseURL: "https://formportal2019.firebaseio.com/",
-        projectId: "formportal2019"
+        apiKey: "AIzaSyArkU60LENXmQPHRvWoK26YagzprezV3dg",
+        authDomain: "cmlformportal-b8674.firebaseapp.com",
+        databaseURL: "https://cmlformportal-b8674.firebaseio.com/",
+        projectId: "cmlformportal-b8674"
       };
       firebase.initializeApp(config);
 
@@ -53,8 +53,10 @@ $(document).ready(function () {
                function sendEmailVerification(data) {
                 comname = firebase.auth().currentUser;
                 email = data.email || user.email;
+                var urlr="https://cmlformportal-b8674.firebaseapp.com";
+
                 return user.emailVerified || user.sendEmailVerification({
-                  url: window.location.href + '?email=' + user.email,
+                  url: urlr,
                 });
               }
               console.log(user);
