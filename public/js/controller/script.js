@@ -32,7 +32,7 @@ $(document).ready(function () {
       
         var data = {
           email: $('#cusemail').val(),
-          cuscomname: $('#cuscomname').val(),
+          cusname: $('#cusname').val(),
           cusid: $('#cusid').val(),
         };
         var passwords = {
@@ -51,13 +51,15 @@ $(document).ready(function () {
               .then(function(user) {
               
                sendEmailVerification(data);
-               save_user();
+               save_cus_credencials();
+               save_cus_com_info();
+               save_cus_theme_info();
 
-               var cuscomname = $('#cuscomname').val();
+               var cusname = $('#cusname').val();
                var email=$('#cusemail').val();
                
                function sendEmailVerification(data) {
-                cuscomname = firebase.auth().currentUser;
+                cusname = firebase.auth().currentUser;
                 email = data.email || user.email;
                 var urlr="https://cmlformportal-b8674.firebaseapp.com";
 
@@ -65,8 +67,8 @@ $(document).ready(function () {
                   url: urlr,
                 });
               }
-
-              function save_user(){
+              //save customer cred to firebase
+              function save_cus_credencials(){
                
                
                 var uid = firebase.database().ref().child('users').push().key;
@@ -87,10 +89,67 @@ $(document).ready(function () {
                 updates['/users/' + uid] = data;
                 firebase.database().ref().update(updates);
    
-                window.location.replace("./index.html");
+              
               }
-            
-             
+
+              //save customer com_info to firebase
+              function save_cus_com_info(){
+               
+                var uid = firebase.database().ref().child('com_profiles').push().key;
+                var cusid = $('#cusid').val();
+                var comlogo = localStorage.getItem('base64');
+                var comname = $('#comname').val();
+                var comcontact =$('#comcontact').val();
+                var comaddress =$('#comaddress').val();
+
+                var data = {
+                 user_id: uid,
+                 cusid:cusid,
+                 comlogo:comlogo,
+                 comname:comname,
+                 comcontact:comcontact,
+                 comaddress:comaddress
+                }
+
+                var updates = {};
+                updates['/com_profiles/' + uid] = data;
+                firebase.database().ref().update(updates);
+   
+                
+              }
+
+              //save customer theme to firebase
+              function save_cus_theme_info(){
+               
+                var uid = firebase.database().ref().child('theme_info').push().key;
+                var cusid = $('#cusid').val();
+                var theme = localStorage.getItem('theme');
+                var formcolor = localStorage.getItem('unicolor');
+                // var layout =$('#comcontact').val();
+                // var options =$('#comaddress').val();
+
+                var data = {
+                 user_id: uid,
+                 cusid:cusid,
+                 theme:theme,
+                 formcolor:formcolor
+                //  layout:layout,
+                //  options:options
+                }
+
+                var updates = {};
+                updates['/theme_info/' + uid] = data;
+                firebase.database().ref().update(updates);
+   
+                refresh();
+              }
+
+              function refresh(){
+                setTimeout(function(){ alert("Data Successfully Sent"); 
+                window.location.replace("./index.html");
+              }, 3000);
+              }
+          
               }).catch(function(error) {
                 console.log("Registration Failed!", error.message);
                 alert(error.message+' Check your input');

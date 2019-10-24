@@ -4,7 +4,7 @@ $(document).ready(function(){
   $('#container').css('visibility', 'hidden');
  
 
-  $("#filename").change(function(){
+  $("#comlodo").change(function(){
     var file = document.querySelector('input[type=file]')['files'][0];
     var reader = new FileReader();
     var baseString;
