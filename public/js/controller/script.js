@@ -25,18 +25,23 @@ $(document).ready(function () {
       }
     });
 
+
+
       $('#wizard-validation').on('submit', function (e) {
         e.preventDefault();
       
         var data = {
-          email: $('#mailid').val(),
-          comname: $('#comname').val(),
-          comid: $('#comid').val(),
+          email: $('#cusemail').val(),
+          cuscomname: $('#cuscomname').val(),
+          cusid: $('#cusid').val(),
         };
         var passwords = {
           password : $('#registerPassword').val(), //get the pass from Form
           cPassword : $('#registerConfirmPassword').val(), //get the confirmPass from Form
         }
+
+      
+
         if( data.email != '' && passwords.password != ''  && passwords.cPassword != '' ){
           if( passwords.password == passwords.cPassword ){
             //create the user
@@ -46,12 +51,13 @@ $(document).ready(function () {
               .then(function(user) {
               
                sendEmailVerification(data);
+               save_user();
 
-               var comname = $('#comname').val();
-               var email=$('#mailid').val();
+               var cuscomname = $('#cuscomname').val();
+               var email=$('#cusemail').val();
                
                function sendEmailVerification(data) {
-                comname = firebase.auth().currentUser;
+                cuscomname = firebase.auth().currentUser;
                 email = data.email || user.email;
                 var urlr="https://cmlformportal-b8674.firebaseapp.com";
 
@@ -59,8 +65,32 @@ $(document).ready(function () {
                   url: urlr,
                 });
               }
-              console.log(user);
-              window.location.replace("./index.html");
+
+              function save_user(){
+               
+               
+                var uid = firebase.database().ref().child('users').push().key;
+                var cusid = $('#cusid').val();
+                var cusname = $('#cusname').val();
+                var cusemail =$('#cusemail').val();
+
+
+                var data = {
+                 user_id: uid,
+                 cusid:cusid,
+                 cusname:cusname,
+                 cusemail:cusemail,
+                 role:"admin"
+                }
+
+                var updates = {};
+                updates['/users/' + uid] = data;
+                firebase.database().ref().update(updates);
+   
+                window.location.replace("./index.html");
+              }
+            
+             
               }).catch(function(error) {
                 console.log("Registration Failed!", error.message);
                 alert(error.message+' Check your input');
@@ -72,6 +102,7 @@ $(document).ready(function () {
         }  
       });
 
+     
       
 
       $('#loginForm').on('submit', function (e) {
@@ -110,9 +141,7 @@ $(document).ready(function () {
           console.log('Out')
           window.location.replace("./index.html");
         });
-      });
-
-     
+      });  
 
       $('#wizard').on('click', function(e) {
         window.location.replace("wizard.html")

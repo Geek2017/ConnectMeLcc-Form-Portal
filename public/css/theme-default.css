@@ -1150,7 +1150,6 @@ body.page-container-boxed .page-container {
   padding: 5px 10px;
   float: left;
   width: 100%;
-  margin-bottom: 20px;
 }
 .block-full-width {
   padding: 0px;
@@ -3887,7 +3886,7 @@ background: #1caf9a ;
 .login-container .login-box {
   width: 400px;
   margin: 0px auto;
-  padding-top: 100px;
+  padding-top: 2%;
 }
 
 
@@ -6016,7 +6015,7 @@ input.ui-editRangeSlider-inputValue {
   margin-top: 30px;
 }
 .wizard .actionBar {
-  margin-top: 20px;
+  margin-top: 2px;
 }
 .wizard .actionBar .btn.pull-right {
   margin-left: 5px;
