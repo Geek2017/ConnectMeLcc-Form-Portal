@@ -4,19 +4,9 @@ $(document).ready(function(){
   $('#container').css('visibility', 'hidden');
  
 
-  $("#comlodo").change(function(){
-    var file = document.querySelector('input[type=file]')['files'][0];
-    var reader = new FileReader();
-    var baseString;
-    reader.onloadend = function () {
-        baseString = reader.result;
-        // console.log(baseString); 
-        localStorage.setItem('base64',baseString);
-    };
-    reader.readAsDataURL(file);
-});
 
-$("#logoimg").attr("src", localStorage.getItem('base64'));
+
+
 
 
 if(localStorage.getItem('theme')==null){

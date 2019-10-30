@@ -1,0 +1,12 @@
+#sig-canvas {
+  border: 2px dotted #CCCCCC;
+  border-radius: 15px;
+  cursor: crosshair;
+
+}
+
+canvas {
+ 
+  width: 100%;
+  height: auto;
+}

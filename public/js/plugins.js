@@ -644,6 +644,12 @@ Object.size = function(obj) {
     }
     return size;
 };
+var strurl=window.location.href;
+var newstr=strurl.slice(-11);
+
+console.log(newstr);
+
+if(newstr=='wizard.html'){
 
 $("#registerPassword").passwordValidation({"confirmField": "#registerConfirmPassword"}, function(element, valid, match, failedCases) {
 
@@ -654,3 +660,4 @@ $("#registerPassword").passwordValidation({"confirmField": "#registerConfirmPass
      if(valid && match) $("#registerPassword").css("border","0.5px solid green") , $("#registerConfirmPassword").css("border","0.5px solid green");
      if(!valid || !match) $("#registerPassword").css("border","0.5px solid red") , $("#registerConfirmPassword").css("border","0.5px solid green");
 });
+}

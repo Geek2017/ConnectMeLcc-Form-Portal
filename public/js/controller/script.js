@@ -11,21 +11,31 @@ $(document).ready(function () {
       //create firebase references
       var Auth = firebase.auth();
       var dbRef = firebase.database();
-      var contactsRef = dbRef.ref('contacts')
       var usersRef = dbRef.ref('users')
       var auth = null;
 
        
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
-        console.log(user.displayName)
+        // console.log(user)
      
         $("#uname").text(user.displayName);
 
       }
     });
 
-
+    $("#comlogo").change(function(){
+      console.log("A file has been selected.");
+      var file = document.querySelector('input[type=file]')['files'][0];
+      var reader = new FileReader();
+      var baseString;
+      reader.onloadend = function () {
+        baseString = reader.result;
+        console.log(baseString);
+        localStorage.setItem('base64',baseString)
+      };
+      reader.readAsDataURL(file);
+    });
 
       $('#wizard-validation').on('submit', function (e) {
         e.preventDefault();
@@ -61,7 +71,7 @@ $(document).ready(function () {
                function sendEmailVerification(data) {
                 cusname = firebase.auth().currentUser;
                 email = data.email || user.email;
-                var urlr="https://cmlformportal-b8674.firebaseapp.com";
+                var urlr = location.origin;
 
                 return user.emailVerified || user.sendEmailVerification({
                   url: urlr,
@@ -82,7 +92,9 @@ $(document).ready(function () {
                  cusid:cusid,
                  cusname:cusname,
                  cusemail:cusemail,
-                 role:"admin"
+                 role:"admin",
+                 designation:"Account Manager",
+
                 }
 
                 var updates = {};
@@ -217,7 +229,7 @@ $(document).ready(function () {
 
           if(dataval.val()==$('#cusid').val()){
             // console.log(dataval.val(),i);
-            alert('Customer Validated AutoFill will take place');
+            // alert('Customer Validated AutoFill will take place');
             var dbRef = firebase.database().ref().child('cus_data/'+i);
             dbRef.on('value', calling => {
               // console.log(calling.val());

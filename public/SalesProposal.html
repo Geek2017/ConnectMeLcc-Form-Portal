@@ -4,15 +4,18 @@
 <head>
     <!-- META SECTION -->
     <title>Form Portal</title>
+    <link rel="stylesheet" type="text/css" id="theme" href="css/theme-white.css" />
+    <link rel="stylesheet" type="text/css" id="theme" href="css/style.css" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <!-- END META SECTION -->
-
+    <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/controller/ccftheme.js"></script>
     <!-- CSS INCLUDE -->
-    <link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css" />
+
     <!-- EOF CSS INCLUDE -->
 </head>
 
@@ -41,10 +44,9 @@
                             <div class="profile-data-title">Web Developer/Designer</div>
                         </div>
                         <div class="profile-controls">
-                            <a href="pages-profile.html" class="profile-control-left"><span
+                            <a href="usersprofile.html" class="profile-control-left"><span
                                     class="fa fa-info"></span></a>
-                            <a href="      " class="profile-control-right"><span
-                                    class="fa fa-envelope"></span></a>
+                            <a href="      " class="profile-control-right"><span class="fa fa-envelope"></span></a>
                         </div>
                     </div>
                 </li>
@@ -55,14 +57,18 @@
                 <li class="xn-openable">
                     <a href="#"><span class="fa fa-files-o"></span> <span class="xn-text">Forms</span></a>
                     <ul>
-                        <li><a href="AddNumber.html"><span class="glyphicon glyphicon-earphone"></span>Add Number</a></li>
+                        <li><a href="AddNumber.html"><span class="glyphicon glyphicon-earphone"></span>Add Number</a>
+                        </li>
                         <li><a href=""><span class="glyphicon glyphicon-list-alt"></span>Sales Proposal</a></li>
                         <li><a href="TollFreePort.html"><span class="fa fa-dollar"></span>Toll Free Port</a></li>
-                        <li><a href="CreditCardForm.html"><span class="fa fa fa-credit-card"></span>Credit Card Auth</a></li>
+                        <li><a href="CreditCardForm.html"><span class="fa fa fa-credit-card"></span>Credit Card Auth</a>
+                        </li>
                         <li><a href="EftAuthorration.html"><span class="fa fa-unlock"></span>EFT Authorization</a></li>
                         <li><a href="LoaPort.html"><span class="fa fa-retweet"></span>LOA Port</a></li>
-                        <li><a href="QuickInstruction.html"><span class="fa fa-thumb-tack"></span>Q Instrustions</a></li>
-                        <li><a href="StarCode.html"><span class="glyphicon glyphicon-qrcode"></span>Star Code Ref.</a></li>
+                        <li><a href="QuickInstruction.html"><span class="fa fa-thumb-tack"></span>Q Instrustions</a>
+                        </li>
+                        <li><a href="StarCode.html"><span class="glyphicon glyphicon-qrcode"></span>Star Code Ref.</a>
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -89,7 +95,8 @@
                 <!-- END SEARCH -->
                 <!-- SIGN OUT -->
                 <li class="xn-icon-button pull-right">
-                    <a href="/public/" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span></a>
+                    <a href="/public/" class="mb-control" data-box="#mb-signout"><span
+                            class="fa fa-sign-out"></span></a>
                 </li>
                 <!-- END SIGN OUT -->
                 <!-- MESSAGES -->
@@ -208,7 +215,8 @@
                         <form class="form-horizontal">
                             <div class="panel panel-default">
                                 <div class="panel-heading ">
-                                    <h3 class="panel-title"><img id="logoimg" class="img-responsive pull-left" width="50%" src="./img/no_bg-dark-horizontal-1.png" alt="log"></h3>
+                                    <h3 class="panel-title"><img id="logoimg" class="img-responsive pull-left"
+                                            width="50%" src="./img/no_bg-dark-horizontal-1.png" alt="log"></h3>
                                     <ul class="panel-controls">
                                         <li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>
                                     </ul>
@@ -228,7 +236,7 @@
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><span
                                                                 class="fa fa-briefcase"></span></span>
-                                                        <input type="text" class="form-control" />
+                                                        <input id="biz" type="text" class="form-control" />
                                                     </div>
 
                                                 </div>
@@ -240,7 +248,7 @@
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><span
                                                                 class="fa fa-user"></span></span>
-                                                        <input type="text" class="form-control" />
+                                                        <input id="cname" type="text" class="form-control" />
                                                     </div>
 
                                                 </div>
@@ -249,7 +257,7 @@
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><span
                                                                 class="fa fa-users"></span></span>
-                                                        <input type="text" class="form-control" />
+                                                        <input id="bname" type="text" class="form-control" />
                                                     </div>
 
                                                 </div>
@@ -261,7 +269,7 @@
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><span
                                                                 class="fa fa-tag"></span></span>
-                                                        <input type="text" class="form-control" />
+                                                        <input id="cphone" type="text" class="form-control" />
                                                     </div>
 
                                                 </div>
@@ -270,7 +278,7 @@
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><span
                                                                 class="fa fa-money"></span></span>
-                                                        <input type="text" class="form-control" />
+                                                        <input id="btitle" type="text" class="form-control" />
                                                     </div>
 
                                                 </div>
@@ -282,7 +290,7 @@
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><span
                                                                 class="fa fa-asterisk"></span></span>
-                                                        <input type="text" class="form-control" />
+                                                        <input id="cphone" type="text" class="form-control" />
                                                     </div>
 
                                                 </div>
@@ -291,7 +299,7 @@
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><span
                                                                 class="fa fa-location-arrow"></span></span>
-                                                        <input type="text" class="form-control" />
+                                                        <input id="bname" type="text" class="form-control" />
                                                     </div>
 
                                                 </div>
@@ -303,7 +311,7 @@
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><span
                                                                 class="fa fa-envelope"></span></span>
-                                                        <input type="text" class="form-control" />
+                                                        <input id="cemail" type="text" class="form-control" />
                                                     </div>
 
                                                 </div>
@@ -312,7 +320,7 @@
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><span
                                                                 class="fa fa-envelope-o"></span></span>
-                                                        <input type="text" class="form-control" />
+                                                        <input id="bemail" type="text" class="form-control" />
                                                     </div>
 
                                                 </div>
@@ -323,7 +331,8 @@
                                                 <div class="col-md-3">
                                                     <div class="input-group">
                                                         <span class="input-group-addon"></span>
-                                                        <textarea class="form-control" rows="5"></textarea>
+                                                        <textarea id="caddress" class="form-control"
+                                                            rows="5"></textarea>
                                                     </div>
 
                                                 </div>
@@ -331,7 +340,8 @@
                                                 <div class="col-md-4">
                                                     <div class="input-group">
                                                         <span class="input-group-addon"></span>
-                                                        <textarea class="form-control" rows="5"></textarea>
+                                                        <textarea id="baddress" class="form-control"
+                                                            rows="5"></textarea>
                                                     </div>
 
                                                 </div>
@@ -349,7 +359,7 @@
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><span
                                                                 class="fa fa-calendar"></span></span>
-                                                        <input type="text" class="form-control datepicker"
+                                                        <input id="date" type="text" class="form-control datepicker"
                                                             value="2014-11-01">
                                                     </div>
 
@@ -361,7 +371,7 @@
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><span
                                                                 class="fa fa-info"></span></span>
-                                                        <input type="text" class="form-control ">
+                                                        <input id="presentedby" type="text" class="form-control ">
                                                     </div>
 
                                                 </div>
@@ -372,7 +382,7 @@
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><span
                                                                 class="fa fa-ellipsis-h"></span></span>
-                                                        <input type="text" class="form-control ">
+                                                        <input id="termlength" type="text" class="form-control ">
                                                     </div>
                                                     <span class="help-block">Federal, state, local taxes, and fees not
                                                         included.</span>
@@ -390,303 +400,262 @@
                                     <div class="col-md-12">
                                         <div class="panel panel-warning panel-heading">
                                             <h3 class="panel-title">Monthly Recurring Charges</h3>
+                                            <div class="btn-group pull-right ">
+                                                <button class="btn btn-success btn-lg" id="mrcadd" >+</button>
+                                                <button class="btn btn-danger btn-lg"  id="mrcmin" >-</button>
+                                            </div>
                                         </div>
                                         <div class="panel-body">
 
-                                            <table class="table table-hover">
+                                            <table class="table table-hover mcrrowTable" id="mcrrowTable">
+                                                <thead>
+                                                    <tr >
+                                                        <th>Unit</th>
+                                                        <th>Services</th>
+                                                        <th>Unit Price</th>
+                                                        <th>Total Price</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><input type="number" id="" class="form-control"
+                                                                placeholder="0"></td>
+                                                        <td><select name="cars" class="btn btn block">
+                                                                <option value="volvo">Unlimited use, Hosted VoIP service
+                                                                    priced monthly per call path</option>
+                                                                <option value="saab">Fax adapter service </option>
+                                                                <option value="fiat">Additional DIDs (direct dial phone
+                                                                    numbers-one is included) </option>
+                                                                <option value="audi">Electronic fax service (inbound and
+                                                                    outbound)</option>
+                                                                <option value="audi">Virtual Extensions for cell or land
+                                                                    lines included at no additional charge</option>
+                                                                <option value="audi">SMS Text with 1,000 texts</option>
+                                                                <option value="audi">Note: 1.50 per device for
+                                                                    regulatory recovery will be added. </option>
+                                                            </select></td>
+                                                        <td><input type="number" id="" class="form-control"
+                                                                placeholder="$ 0.00"></td>
+                                                        <td><input type="number" id="mcramount" class="form-control mcramount"
+                                                                placeholder="$ 0.00"></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>
+                                                            <h4>Total Monthly Recurring Charges</h4>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>
+                                                            <h4><input type="number" id="mrctotal" class="form-control mrctotal"
+                                                                    placeholder="$ 0.00"></h4>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="panel-heading panel panel-warning">
+                                            <h3 class="panel-title">Non-Recurring Charges (NRC)</h3>
+                                            <div class="btn-group pull-right ">
+                                                <button class="btn btn-success btn-lg" id="nrcadd" >+</button>
+                                                <button class="btn btn-danger btn-lg" id="nrcmin" >-</button>
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+
+                                            <table class="table table-hover ncrrowTable" id="ncrrowTable">
                                                 <thead>
                                                     <tr>
                                                         <th>Unit</th>
                                                         <th>Services</th>
                                                         <th>Unit Price</th>
-                                                        <th>Total Price</th>
-                                                  
+                                                        <th>Total Price </th>
+
+
+
+
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>0.00</td>
-                                                        <td>Unlimited use, Hosted VoIP service priced monthly per call
-                                                            path</td>
-                                                        <td>$ 0.00</td>
-                                                        <td>$ 0.00</td>
+                                                        <td><input type="number" id="" class="form-control"
+                                                                placeholder="0"></td>
+                                                        <td><select name="cars" class="btn btn block">
+                                                                <option value="volvo">Aastra/Mitel 6863i Basic | MSRP
+                                                                    $100.00</option>
+                                                                <option value="saab">Aastra/Mitel 6867i Advanced Phone |
+                                                                    MSRP $230.00</option>
+                                                                <option value="fiat">Aastra/Mitel 6869i Executive Phone
+                                                                    | MSRP $300.00</option>
+                                                                <option value="audi">Aastra/Mitel 6873i Advanced Touch
+                                                                    Screen Executive Phone | MSRP $425.00 </option>
+                                                                <option value="audi">Aastra/Mitel M680i Expansion Module
+                                                                    | MSRP $80.00</option>
+                                                                <option value="audi">Aastra/Mitel M685i Expansion Module
+                                                                    | MSRP $200.00</option>
+                                                                <option value="audi">Aastra/Mitel MiVoice Conference
+                                                                    Phone | MSRP $1,195.00</option>
+                                                            </select></td>
+                                                        <td><input type="number" id="" class="form-control"
+                                                                placeholder="$ 0.00"></td>
+                                                        <td><input type="number" id="" class="form-control"
+                                                                placeholder="$ 0.00"></td>
                                                     </tr>
+
+
                                                     <tr>
-                                                        <td>0.00</td>
-                                                        <td>Fax adapter service </td>
-                                                        <td>$ 0.00</td>
-                                                        <td>$ 0.00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0.00</td>
-                                                        <td>Additional DIDs (direct dial phone numbers-one is included)
+                                                        <td></td>
+                                                        <td>
+                                                            <h4>Total Non-Recurring ChargesDate</h4>
                                                         </td>
-                                                        <td>$ 0.00</td>
-                                                        <td>$ 0.00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0.00</td>
-                                                        <td>Electronic fax service (inbound and outbound)</td>
-                                                        <td>$ 0.00</td>
-                                                        <td>$ 0.00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0.00</td>
-                                                        <td>Virtual Extensions for cell or land lines included at no
-                                                            additional charge</td>
-                                                        <td>$ 0.00</td>
-                                                        <td>$ 0.00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0.00</td>
-                                                        <td>SMS Text with 1,000 texts</td>
-                                                        <td>$ 0.00</td>
-                                                        <td>$ 0.00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>0.00</td>
-                                                        <td>Note: 1.50 per device for regulatory recovery will be added.
+                                                        <td></td>
+                                                        <td>
+                                                            <h4>$ 0.00</h4>
                                                         </td>
-                                                        <td>$ 0.00</td>
-                                                        <td>$ 0.00</td>
                                                     </tr>
-                                                    <tr>
-                                                            <td></td>
-                                                            <td><h4>Total Monthly Recurring Charges</h4>
-                                                            </td>
-                                                            <td></td>
-                                                            <td><h4>$ 0.00</h4></td>
-                                                        </tr>
                                                 </tbody>
                                             </table>
+                                            <br />
+
+
+
                                         </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                            <div class="panel-heading panel panel-warning">
-                                                <h3 class="panel-title">Non-Recurring Charges (NRC)</h3>
-                                            </div>
-                                            <div class="panel-body">
-    
-                                                <table class="table table-hover">
+
+                                        <div class="row">
+
+                                            <div class="col-md-12" style="padding-top: 2%!important;">
+
+                                                <div class="panel-heading panel panel-warning">
+                                                    <h3 class="panel-title">Free Program Feature Highlights
+                                                    </h3>
+                                                    <div class="btn-group pull-right ">
+                                                        <button class="btn btn-success btn-lg" id="fpfhadd" >+</button>
+                                                        <button class="btn btn-danger btn-lg" id="fpfhmin" >-</button>
+                                                    </div>
+                                                </div>
+                                                <table class="table table-hover fpfrowTable" id="fpfrowTable">
                                                     <thead>
                                                         <tr>
                                                             <th>Unit</th>
                                                             <th>Services</th>
                                                             <th>Unit Price</th>
                                                             <th>Total Price</th>
-                                                      
+
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td>0.00</td>
-                                                            <td>Aastra/Mitel 6863i Basic | MSRP $100.00
-                                                                path</td>
-                                                            <td>$ 0.00</td>
-                                                            <td>$ 0.00</td>
+                                                            <td><input type="number" id="" class="form-control"
+                                                                    placeholder="0"></td>
+                                                            <td><select name="cars" class="btn btn block">
+                                                                    <option value="volvo">Auto attendant with
+                                                                        unlimited extensions and dial by name
+                                                                    </option>
+                                                                    <option value="saab">Upload custom music-on-hold
+                                                                    </option>
+                                                                    <option value="fiat">Upload greetings </option>
+                                                                    <option value="audi">Voicemail to email
+                                                                    </option>
+                                                                    <option value="audi">After hours and holiday
+                                                                        routing</option>
+                                                                    <option value="audi">Extension to extension
+                                                                        dialing </option>
+                                                                    <option value="audi">Callier ID and CallerId
+                                                                        name </option>
+                                                                </select></td>
+                                                            <td><input type="number" id="" class="form-control"
+                                                                    placeholder="$ 0.00"></td>
+                                                            <td><input type="number" id="" class="form-control"
+                                                                    placeholder="$ 0.00"></td>
                                                         </tr>
+
                                                         <tr>
-                                                            <td>0.00</td>
-                                                            <td>Aastra/Mitel 6867i Advanced Phone | MSRP $230.00</td>
-                                                            <td>$ 0.00</td>
-                                                            <td>$ 0.00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>0.00</td>
-                                                            <td>Aastra/Mitel 6869i Executive Phone | MSRP $300.00
+                                                            <td></td>
+                                                            <td>
+                                                                <h4>Total Program Features</h4>
                                                             </td>
-                                                            <td>$ 0.00</td>
-                                                            <td>$ 0.00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>0.00</td>
-                                                            <td>Aastra/Mitel 6873i Advanced Touch Screen Executive Phone | MSRP $425.00 </td>
-                                                            <td>$ 0.00</td>
-                                                            <td>$ 0.00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>0.00</td>
-                                                            <td>Aastra/Mitel M680i Expansion Module | MSRP $80.00</td>
-                                                            <td>$ 0.00</td>
-                                                            <td>$ 0.00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>0.00</td>
-                                                            <td>Aastra/Mitel M685i Expansion Module | MSRP $200.00</td>
-                                                            <td>$ 0.00</td>
-                                                            <td>$ 0.00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>0.00</td>
-                                                            <td>Aastra/Mitel MiVoice Conference Phone | MSRP $1,195.00
+                                                            <td></td>
+                                                            <td>
+                                                                <h4>$ 0.00</h4>
                                                             </td>
-                                                            <td>$ 0.00</td>
-                                                            <td>$ 0.00</td>
                                                         </tr>
-                                                        <tr>
-                                                                <td>0.00</td>
-                                                                <td>Aastra/Mitel Power Supply (power supplies not included with phone) | MSRP $25.00
-                                                                </td>
-                                                                <td>$ 0.00</td>
-                                                                <td>$ 0.00</td>
-                                                            </tr>
-                                                        <tr>
-                                                                <td></td>
-                                                                <td><h4>Total Non-Recurring ChargesDate</h4>
-                                                                </td>
-                                                                <td></td>
-                                                                <td><h4>$ 0.00</h4></td>
-                                                            </tr>
                                                     </tbody>
                                                 </table>
-                                                <div class="row">
 
-                                                        <div class="col-md-6">
-                
-                                                            <div class="form-group">
-                                                                <label class="col-md-3 control-label">Customer Signature:</label>
-                                                                <div class="col-md-9">
-                                                                    <div class="input-group">
-                                                                        <span class="input-group-addon"><span
-                                                                                class="glyphicon glyphicon-pencil"></span></span>
-                                                                        <input type="text" class="form-control" />
-                                                                    </div>
-                
-                                                                </div>
-                                                            </div>
-                
-                                                          
-                
-                
-                
-                
-                                                        </div>
-                                                        <div class="col-md-6">
-                
-                                                          
-                                                                <div class="form-group">
-                                                                        <label class="col-md-3 control-label">Date</label>
-                                                                        <div class="col-md-9">
-                                                                            <div class="input-group">
-                                                                                <span class="input-group-addon"><span
-                                                                                        class="fa fa-calendar"></span></span>
-                                                                                <input type="text" class="form-control datepicker"
-                                                                                    value="2014-11-01">
-                                                                            </div>
-                        
-                                                                        </div>
-                                                                    </div>
-                                                         
-                
-                
-                
-                                                        </div><br><br><br>
-                                                        <div class="col-md-12">
-                
-                                                                <div class="form-group">
-                                                                    <label class="col-md-4 control-label">Main Phone Number to be Used to Establish Account:</label>
-                                                                    <div class="col-md-8">
-                                                                        <div class="input-group">
-                                                                            <span class="input-group-addon"><span
-                                                                                    class="glyphicon glyphicon-asterisk"></span></span>
-                                                                            <input type="text" class="form-control" />
-                                                                            
-                                                                        </div>
-                                                                        <span class="help-block">This proposal has been approved and is valid for 30 days from signature date.</span>
-                                                                    </div>
-                                                                </div>
-                    
-                                                              
-                                                                <div class="panel-heading panel panel-warning">
-                                                                        <h3 class="panel-title">Free Program Feature Highlights</h3>
-                                                                    </div>
-                                                                <table class="table table-hover">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th>Unit</th>
-                                                                                <th>Services</th>
-                                                                                <th>Unit Price</th>
-                                                                                <th>Total Price</th>
-                                                                          
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>0.00</td>
-                                                                                <td>Auto attendant with unlimited extensions and dial by name </td>
-                                                                                <td>$ 0.00</td>
-                                                                                <td>$ 0.00</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>0.00</td>
-                                                                                <td>Upload custom music-on-hold</td>
-                                                                                <td>$ 0.00</td>
-                                                                                <td>$ 0.00</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>0.00</td>
-                                                                                <td>Upload greetings 
-                                                                                </td>
-                                                                                <td>$ 0.00</td>
-                                                                                <td>$ 0.00</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>0.00</td>
-                                                                                <td>Followme calling with profiles for mobility</td>
-                                                                                <td>$ 0.00</td>
-                                                                                <td>$ 0.00</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>0.00</td>
-                                                                                <td>After hours and holiday routing</td>
-                                                                                <td>$ 0.00</td>
-                                                                                <td>$ 0.00</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>0.00</td>
-                                                                                <td>Voicemail to email </td>
-                                                                                <td>$ 0.00</td>
-                                                                                <td>$ 0.00</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>0.00</td>
-                                                                                <td>Extension to extension dialing 
-                                                                                </td>
-                                                                                <td>$ 0.00</td>
-                                                                                <td>$ 0.00</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                    <td>0.00</td>
-                                                                                    <td>Callier ID and CallerId name 
-                                                                                    </td>
-                                                                                    <td>$ 0.00</td>
-                                                                                    <td>$ 0.00</td>
-                                                                                </tr>
-                                                                            <tr>
-                                                                                    <td></td>
-                                                                                    <td><h4>Total Program Features</h4>
-                                                                                    </td>
-                                                                                    <td></td>
-                                                                                    <td><h4>$ 0.00</h4></td>
-                                                                                </tr>
-                                                                        </tbody>
-                                                                    </table>
-                    
-                    
-                    
-                                                            </div>
-                                                           
-                                                            
-                                                    </div>
+
+
                                             </div>
+
+
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="col-md-4 control-label">Main Phone Number to be
+                                                        Used to Establish Account:</label>
+                                                    <div class="col-md-8">
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon"><span
+                                                                    class="glyphicon glyphicon-asterisk"></span></span>
+                                                            <input type="text" class="form-control" />
+
+                                                        </div>
+                                                        <span class="help-block">This proposal has been approved and
+                                                            is valid for 30 days from signature date.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-4 control-label">Date</label>
+                                                    <div class="col-md-8">
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon"><span
+                                                                    class="fa fa-calendar"></span></span>
+                                                            <input type="text" class="form-control datepicker"
+                                                                value="2014-11-01">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-6">
+                                                <h5><strong> Signature: </strong><button
+                                                        class="btn btn-warning btn-default btn-rounded pull-right"
+                                                        id="sig-clearBtn">
+                                                        X</button></h5>
+                                                <!-- <div class="row pull-right">
+                                                                <div class="col-md-12">
+                                                                       
+                                                                </div>
+                                                            </div>          -->
+                                                <div class="row pull-right">
+                                                    <div class="col-md-12">
+                                                        <canvas id="sig-canvas" width="600" height="80">
+
+                                                        </canvas>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <br /><br /><br />
+
+
                                         </div>
-                                  
-                                </div>
-                                <div class="panel-footer">
-                                        <button class="btn btn-default">Clear Form</button>
-                                        <button class="btn btn-primary pull-right">Submit</button>
+
+                                    </div> <br /><br /><br />
+                                    <div class="panel-footer">
+                                        <button class="btn btn-danger">Clear Form</button>
+                                        <div class="btn-group pull-right ">
+                                            <button class="btn btn-info ">Print it</button>
+                                            <button class="btn btn-primary ">Mail it</button>
+                                            <button class="btn btn-success ">Save it</button>                                      
+                                        </div>
                                     </div>
-                            </div>
+                                    
                         </form>
 
                     </div>
@@ -710,8 +679,7 @@
                 </div>
                 <div class="mb-footer">
                     <div class="pull-right">
-                      <a href="./index.html" 
-id="logout" class="btn btn-success btn-lg">Yes</a>
+                        <a href="./index.html" id="logout" class="btn btn-success btn-lg">Yes</a>
                         <button class="btn btn-default btn-lg mb-control-close">No</button>
                     </div>
                 </div>
@@ -727,11 +695,16 @@ id="logout" class="btn btn-success btn-lg">Yes</a>
 
     <!-- START SCRIPTS -->
     <!-- START PLUGINS -->
-    <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+
     <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>
     <!-- END PLUGINS -->
-    <script type="text/javascript" src="js/controller/ccftheme.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+    <script src="js/controller/script.js"></script>
+    <script type="text/javascript" src="js/controller/salesproposal.js"></script>
+    <script src="js/controller/auth.js"></script>
+
+
     <!-- THIS PAGE PLUGINS -->
     <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>
     <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
@@ -747,9 +720,8 @@ id="logout" class="btn btn-success btn-lg">Yes</a>
 
     <script type="text/javascript" src="js/plugins.js"></script>
     <script type="text/javascript" src="js/actions.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
-    <script src="js/controller/script.js"></script>
-    <script src="js/controller/auth.js"></script>
+    <script type="text/javascript" src="js/signscript.js"></script>
+
     <!-- END TEMPLATE -->
     <!-- END SCRIPTS -->
 </body>
