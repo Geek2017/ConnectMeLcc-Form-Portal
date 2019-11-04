@@ -1,8 +1,22 @@
 $(document).ready(function () {
-
+  
    
       firebase.auth().onAuthStateChanged(function(user) {
        
+        $("#userimg").change(function(){
+          console.log("A file has been selected.");
+          var file = document.querySelector('input[type=file]')['files'][0];
+          var reader = new FileReader();
+          var baseString;
+          reader.onloadend = function () {
+            baseString = reader.result;
+            console.log(baseString);
+            localStorage.setItem('userimg',baseString)
+          };
+          reader.readAsDataURL(file);
+        });
+
+
         //   console.log(user)
         var databaseRef = firebase.database().ref('users/');
         databaseRef.once('value', function(snapshot) {
@@ -36,7 +50,8 @@ $(document).ready(function () {
              cusname: $('#usersname').val(),
              cusemail:$('#usersmail').val(),
              contact:$('#userscontacts').val(),
-             designation:$('#usersdesignation').val()
+             designation:$('#usersdesignation').val(),
+             userimages:localStorage.getItem('userimg')
             }
             
             var updates = {};

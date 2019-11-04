@@ -38,7 +38,8 @@ $(document).ready(function () {
                  name:"Jane Doe",
                  time:time,
                  date:date,
-                 msg:chat.val() 
+                 msg:chat.val(), 
+                 attachement:""
                 }
              
                 
